@@ -42,7 +42,7 @@ val_pariso_melody = \relative e' {
     { g4. g }
     { g4. g4 fis8 }
   }
-
+  \bar "|."
 }
 
 val_pariso = \score {
