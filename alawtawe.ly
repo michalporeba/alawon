@@ -11,7 +11,7 @@
     title = "Alawon o Abertawe"
     subtitle = ""
     copyright = ""
-    tagline = "Fersiwn 2022-09-19."
+    tagline = "Fersiwn 2022-09-20."
   }
  
   \bookpart {
@@ -21,7 +21,7 @@
     
     \mumbles_hornpipe
     \swansea_hornpipe
-    \val_pariso   
+    \valparaiso   
 
     \pageBreak
 

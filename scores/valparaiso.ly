@@ -1,16 +1,16 @@
 % written 2022-09-19 
 % transcription from Ceri Rhys Matthews 
 
-val_pariso_title = "Val Pariso"
+valparaiso_title = "Valparaíso"
 
-val_pariso_common =  {
+valparaiso_common =  {
   \time 6/8
   \clef treble 
   \key e \minor
 }
 
-val_pariso_melody = \relative e' {
-  \val_pariso_common 
+valparaiso_melody = \relative e' {
+  \valparaiso_common 
 
   \repeat volta 2 {
     e8 b' e, b'4 d8
@@ -18,7 +18,7 @@ val_pariso_melody = \relative e' {
     d4. b4. 
     a8 b a b c b 
 
-    e,8 b' e, b'4 e8
+    e,8 b' e, b'4 d8
     e8 fis g g fis e 
     d4 d8 b4 a8 
   }
@@ -45,10 +45,10 @@ val_pariso_melody = \relative e' {
   \bar "|."
 }
 
-val_pariso = \score {
+valparaiso = \score {
   \header { 
-    title = \val_pariso_title
+    title = \valparaiso_title
   }
-  \val_pariso_melody
+  \valparaiso_melody
 } %score
   
