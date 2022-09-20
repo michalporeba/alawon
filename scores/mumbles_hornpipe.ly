@@ -12,7 +12,8 @@ mumbles_hornpipe_common =  {
 
 mumbles_hornpipe_melody = \relative g' {
   \mumbles_hornpipe_common 
-
+  \hornpipe_tempo
+  
   g8 fis
   \repeat volta 2 {
     g8 b d4 \tuplet 3/2 { d8 e fis } g8 e

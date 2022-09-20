@@ -9,26 +9,26 @@
     
     % annotate-spacing = ##t
   
-    indent = 25\mm
+    indent = 15\mm
     %system-count = #5
     
-    #(set-paper-size "a5landscape")
+    #(set-paper-size "a5")
     
-    %#(define fonts (make-pango-font-tree 
-    %                      "FoglihtenNo07"
-    %                      "Autobus Bold"
-    %                      "Truetypewriter"
-    %                      (/ staff-height pt 20)))
+    #(define fonts (make-pango-font-tree 
+                          "Indie Flower"
+                          "Autobus Bold"
+                          "Truetypewriter"
+                          (/ staff-height pt 20)))
     
     bookTitleMarkup = \markup {
       \bold
       \fill-line {
         \center-column {
           
-          \vspace #7
-          \line { \fontsize #8 \override #'(font-name . "FoglihtenNo07") "Alawon o Abertawe" }
+          \vspace #9
+          \line { \fontsize #11 \override #'(font-name . "Indie Flower") "Alawon o Abertawe" }
           \vspace #1.5
-          \line { \fontsize #6 \override #'(font-name . "FoglihtenNo04") "Casgliad Ceri Rhys Matthews" }
+          %\line { \fontsize #6 \override #'(font-name . "Indie Flower") "Casgliad Ceri Rhys Matthews" }
           \vspace #0.5
           
         }
@@ -45,7 +45,7 @@
             \column {
               \vspace #-0.25
               \left-column { 
-                \line{ \fontsize #5 \override #'(font-name . "FoglihtenNo07") \fromproperty #'header:title } 
+                \line{ \fontsize #5 \override #'(font-name . "Indie Flower") \fromproperty #'header:title } 
              }
               \vspace #0.75
             }
@@ -65,7 +65,7 @@
           \right-column {
             \vspace #0.25
             \with-color #grey
-            \typewriter
+            %\typewriter
             \fromproperty #'header:tagline
           }
           \left-column { 
@@ -84,7 +84,7 @@
           \left-column {
             \vspace #0.25
             \with-color #grey
-            \typewriter
+            %\typewriter
             \fromproperty #'header:tagline
           }
           \right-column { 

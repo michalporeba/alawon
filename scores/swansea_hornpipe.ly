@@ -12,7 +12,8 @@ swansea_hornpipe_common =  {
 
 swansea_hornpipe_melody = \relative a' {
   \swansea_hornpipe_common 
-
+  \hornpipe_tempo
+  
   a8 fis
   \repeat volta 2 {
     d4 a' b8 a fis d 
