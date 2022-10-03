@@ -11,7 +11,7 @@
     title = "Alawon o Abertawe"
     subtitle = ""
     copyright = ""
-    tagline = "Fersiwn 2022-10-02."
+    tagline = "Fersiwn 2022-10-03."
   }
  
   \bookpart {
@@ -19,9 +19,9 @@
     
     \pageBreak
     
-    \march_a 
-    \march_b
-    \march_c
+    \march_a % the go at swansea
+    \march_b % the penderry plate
+    \march_c % the crymlyn races
 
     \pageBreak 
 

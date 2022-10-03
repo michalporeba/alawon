@@ -38,16 +38,16 @@
     scoreTitleMarkup = \markup {
       \fill-line {
         \left-column {
-          \vspace #0.75
+          \vspace #0.5
           \line {
             
             \column { \rounded-box \pad-markup #1 { \line { \huge { \bold { \fromproperty #'header:key } } } } }
             \column {
-              \vspace #-0.25
+              \vspace #-0.1
               \left-column { 
                 \line{ \fontsize #5 \override #'(font-name . "Indie Flower") \fromproperty #'header:title } 
              }
-              \vspace #0.75
+              %\vspace #0.5
             }
           }
         }
