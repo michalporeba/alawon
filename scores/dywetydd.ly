@@ -18,7 +18,7 @@ dywetydd_melody = \relative a' {
 
   \repeat volta 2 {
     \afterGrace a4 { a,8 } g'8 e d e 
-    a,4 a4 b8 a
+    \afterGrace a,2 { a4 } b8 a
     g8 a b c d e 
     d b g b d b 
     a4 a8 g e d 
@@ -26,8 +26,8 @@ dywetydd_melody = \relative a' {
     a4 g8 e d b'
   }
   \alternative {
-    { a4 a8 a c e }
-    { a,4 a a8 b }
+    { a4. a8 c e }
+    { \afterGrace a,2 { a4 } a8 b }
   }
 
   c2 a8 c
@@ -37,15 +37,15 @@ dywetydd_melody = \relative a' {
 
   c'4 a c 
   b g e 
-  a4 g4. g8 
+  a4 \afterGrace g2 { g4 } 
   e4 d \tuplet 3/2 {d'8 e g}
   
   a4 g8 e d b 
-  a4 a b8 a 
+  \afterGrace a2 { a4 } b8 a 
   g8 a b c d e 
   d b g b d4
   a'8 b a g e d
-  e4 e8 d e g 
+  e2 \tuplet 3/2 { d8 e g }
   b8 a g e d b 
   a2 
 
