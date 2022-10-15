@@ -26,7 +26,7 @@
         \center-column {
           
           \vspace #9
-          \line { \fontsize #11 \override #'(font-name . "Indie Flower") "Alawon o Abertawe" }
+          \line { \fontsize #11 \override #'(font-name . "Indie Flower") \fromproperty #'header:title }
           \vspace #1.5
           %\line { \fontsize #6 \override #'(font-name . "Indie Flower") "Casgliad Ceri Rhys Matthews" }
           \vspace #0.5

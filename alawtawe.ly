@@ -11,7 +11,7 @@
     title = "Alawon o Abertawe"
     subtitle = ""
     copyright = ""
-    tagline = "Fersiwn 2022-10-03."
+    tagline = "Fersiwn 2022-10-15."
   }
  
   \bookpart {
@@ -31,6 +31,8 @@
     \tom_rosser
 
     \pageBreak
+
+    \dywetydd
 
   } %bookpart
 } %book

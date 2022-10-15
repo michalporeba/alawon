@@ -12,17 +12,25 @@ tom_rosser_common =  {
 tom_rosser_melody = \relative b' {
   \tom_rosser_common 
 
-  \repeat volta 2 {
-    r8 b a g fis e
-    d4. e8 fis e 
-    d4 g8 d4 g8 
-    fis8 g a g4 b8 
-    b8 a g g fis e 
-    d4. e8 fis e 
-    d4. d4 g8 
-    fis4 a8 g4. 
-  }
+  b8 b a g fis e
+  d4. e8 fis e 
+  d4 g8 d4 g8 
+  fis8 g a g4 b8 
+  b8 a g g fis e 
+  d4. e8 fis e 
+  d4. d4 g8 
+  fis4 a8 g4 g8 
 
+  g8 b a g fis e  
+  d4. e8 fis e 
+  d8 e d d4 g8
+  fis4 a8 g4 b8
+  b8 a g g fis e 
+  d4. e8 fis e
+  d8 b' a d4 g8 
+  fis4 a8 g4 g8 
+
+  \bar"||"
   
   b8 g b a fis a 
   g e g fis4 d8 
