@@ -1,17 +1,16 @@
 \version "2.18.2"
 
+draft_date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 \include "includes.ly"
-
 \include "layout.ly"
-
-\book {
-  \include "paper.ly"
+\include "paper.ly"
   
+\book {
   \header { 
     title = "Alawon o Abertawe"
     subtitle = ""
     copyright = ""
-    tagline = "Fersiwn 2022-10-15."
+    tagline = \markup { "Fersiwn" \draft_date }
   }
  
   \bookpart {

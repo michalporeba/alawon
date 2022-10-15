@@ -1,5 +1,4 @@
-pdf:
-	rm wip.ly
+all:
 	lilypond --loglevel=ERROR --output=alawon_abertawe ./alawtawe.ly
 
 wip:
