@@ -28,6 +28,7 @@
     \mumbles_hornpipe
     \swansea_hornpipe
     \valparaiso   
+    \tom_rosser
 
     \pageBreak
 
