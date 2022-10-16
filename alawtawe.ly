@@ -10,7 +10,7 @@ draft_date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     title = "Alawon o Abertawe"
     subtitle = ""
     copyright = ""
-    tagline = \markup { "Fersiwn" \draft_date }
+    tagline = \markup { \smaller { "Fersiwn" \draft_date } }
   }
  
   \bookpart {
@@ -26,8 +26,12 @@ draft_date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
     \mumbles_hornpipe
     \swansea_hornpipe
+    \pageBreak 
     \valparaiso   
+
+    \pageBreak
     \tom_rosser
+    \tom_rosser_pencader
 
     \pageBreak
 

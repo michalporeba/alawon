@@ -47,7 +47,6 @@
               \left-column { 
                 \line{ \fontsize #5 \override #'(font-name . "Indie Flower") \fromproperty #'header:title } 
              }
-              %\vspace #0.5
             }
           }
         }
