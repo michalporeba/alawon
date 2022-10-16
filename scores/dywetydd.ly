@@ -1,4 +1,5 @@
-% written 2022-09-19 
+% recorded on 2022-10-15
+% minuette 
 % transcription from Ceri Rhys Matthews 
 
 dywetydd_title = "Ar Dywetydd Teg o Ebrill"
@@ -47,8 +48,16 @@ dywetydd_melody = \relative a' {
   a'8 b a g e d
   e2 \tuplet 3/2 { d8 e g }
   b8 a g e d b 
-  a2 
-
+  a2 \tuplet 3/2 { a8 c e }
+  \bar"||"
+  a4 g8 e d e 
+  \afterGrace a,2 { a4 } b8 a
+  g8 a b c d e 
+  d4 b g
+  a4. g8 e d
+  e4. d8 e g 
+  a4 g8 e d4
+  a'2 
 
   \bar "|."
 }

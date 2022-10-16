@@ -12,7 +12,7 @@ tom_rosser_common =  {
 tom_rosser_melody = \relative b' {
   \tom_rosser_common 
 
-  b8 b a g fis e
+  r8 b a g fis e
   d4. e8 fis e 
   d4 g8 d4 g8 
   fis8 g a g4 b8 
@@ -27,7 +27,7 @@ tom_rosser_melody = \relative b' {
   fis4 a8 g4 b8
   b8 a g g fis e 
   d4. e8 fis e
-  d8 b' a d4 g8 
+  d8 b' a d,4 g8 
   fis4 a8 g4 g8 
 
   \bar"||"
