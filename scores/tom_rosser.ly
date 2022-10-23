@@ -10,7 +10,7 @@ tom_rosser_common =  {
   \key g \major
 }
 
-tom_rosser_melody = \relative b' {
+tom_rosser_melody_a = \relative b' {
   \tom_rosser_common 
   r8 b8 a g fis e
   \repeat volta 2 {
@@ -44,7 +44,7 @@ tom_rosser_melody = \relative b' {
   \bar"|."
 }
 
-tom_rosser_melody_b = \relative b' {
+tom_rosser_melody = \relative b' {
   \tom_rosser_common 
   \partial 4
   b8 a 
@@ -129,16 +129,9 @@ tom_rosser_pencader_melody = \relative b' {
 
 tom_rosser = \score { 
   \header { 
-    title = "Tom Rosser 1" %\tom_rosser_title
+    title = \tom_rosser_title
   }
   \tom_rosser_melody
-}
-
-tom_rosser_b = \score { 
-  \header { 
-    title = "Tom Rosser 2"
-  }
-  \tom_rosser_melody_b
 }
 
 tom_rosser_pencader = \score {
