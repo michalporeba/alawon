@@ -31,7 +31,7 @@ dyfatty_sheppans_melody = \relative d' {
   \repeat volta 2 {
     g8 g b a16 g 
     fis8 fis a g16 fis 
-    e8 g e g 
+    e8 g g fis16 e 
     fis16 g fis e d8 b
 
   }
