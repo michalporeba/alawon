@@ -28,14 +28,10 @@ draft_date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     \swansea_hornpipe
     \pageBreak 
     \valparaiso   
-
+    \dywetydd
     \pageBreak
     \tom_rosser
     \tom_rosser_pencader
-
-    \pageBreak
-
-    \dywetydd
 
   } %bookpart
 } %book
