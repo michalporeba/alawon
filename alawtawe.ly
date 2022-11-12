@@ -35,5 +35,6 @@ draft_date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
     \pageBreak 
     \beau_nash
+    \dyfatty_sheppans
   } %bookpart
 } %book
