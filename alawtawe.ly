@@ -33,5 +33,7 @@ draft_date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     \tom_rosser
     \tom_rosser_pencader
 
+    \pageBreak 
+    \beau_nash
   } %bookpart
 } %book
