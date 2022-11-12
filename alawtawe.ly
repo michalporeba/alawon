@@ -31,7 +31,7 @@ draft_date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     \dywetydd
     \pageBreak 
     \cwm_felin   
-    
+    \rita_nant
     \pageBreak
     \tom_rosser
     \tom_rosser_pencader
