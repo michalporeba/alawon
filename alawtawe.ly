@@ -27,8 +27,11 @@ draft_date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     \mumbles_hornpipe
     \swansea_hornpipe
     \pageBreak 
-    \valparaiso   
+    \valparaiso
     \dywetydd
+    \pageBreak 
+    \cwm_felin   
+    
     \pageBreak
     \tom_rosser
     \tom_rosser_pencader

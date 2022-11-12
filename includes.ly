@@ -1,6 +1,7 @@
 \include "helpers.ly"
 
 \include "scores/beau_nash.ly"
+\include "scores/cwm_felin.ly"
 \include "scores/dyfatty_sheppans.ly"
 \include "scores/dywetydd.ly"
 \include "scores/march_a.ly"
