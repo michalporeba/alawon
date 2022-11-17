@@ -30,8 +30,8 @@ draft_date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     \valparaiso
     \dywetydd
     \pageBreak 
-    \cwm_felin   
-    \rita_nant
+    \cwm_felin
+    
     \pageBreak
     \tom_rosser
     \tom_rosser_pencader
@@ -39,5 +39,9 @@ draft_date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     \pageBreak 
     \beau_nash
     \dyfatty_sheppans
+
+    \pageBreak 
+    \rita_nant
+    \jig_rita_nant
   } %bookpart
 } %book
