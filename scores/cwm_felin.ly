@@ -4,42 +4,40 @@
 cwm_felin_title = "Cwm Felin"
 
 cwm_felin_common =  {
-  \time 2/4
+  \time 2/2
   \clef treble 
   \key d \major
 }
 
 cwm_felin_melody = \relative d' {
   \cwm_felin_common 
-
+  \swing_ceri
   \repeat volta 2 {
-    fis8 fis g fis16 g 
-    a8 fis16 e d e fis a
-    b8 d16 b a fis e d 
-    e8 e16 d e d b' a 
+    fis4 fis g fis8 g 
+    a4 fis8 e d e fis a
+    b4 d8 b a fis e d 
+    e4 e8 d e d b' a 
     
-    fis8 fis g fis16 g 
-    a8 fis16 e d e fis a
-    b8 g'16 fis e d b d 
+    fis4 fis g fis8 g 
+    a4 fis8 e d e fis a
+    b4 g'8 fis e d b d 
     
   }
   \alternative {
-    { a16 fis e fis d8 d16 e }
-    { a16 fis e fis d4 }
+    { a8 fis e fis d4 d8 e }
+    { a8 fis e fis d2 }
   }
-  \bar"||"
   \repeat volta 2 {
-    e'8 e16 d b a b e 
-    fis8 fis16 e d b a8 
-    e'8 e16 d b a b fis' 
-    g8 g16 fis e d b a 
+    e'4 e8 d b a b e 
+    fis4 fis8 e d b a4
+    e'4 e8 d b a b fis' 
+    g4 g8 fis e d b a 
 
-    fis8 fis g fis16 g 
-    a8 fis16 e d e fis a
-    b8 g'16 fis e d b d 
-    a16 fis e fis d4
+    fis4 fis g fis8 g 
+    a4 fis8 e d e fis a
+    b4 g'8 fis e d b d 
+    a8 fis e fis d2
   }
-  \bar"|."
 }
 
 cwm_felin = \score {
