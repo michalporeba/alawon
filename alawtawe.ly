@@ -17,21 +17,22 @@ draft_date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     \pageBreak
     
     \pageBreak
-    
     \march_a % the go at swansea
     \march_b % the penderry plate
     \march_c % the crymlyn races
 
     \pageBreak 
-
     \mumbles_hornpipe
     \swansea_hornpipe
+    
     \pageBreak 
     \valparaiso
     \dywetydd
+
     \pageBreak 
     \cwm_felin
-    
+    \tom_lloyd 
+
     \pageBreak
     \tom_rosser
     \tom_rosser_pencader

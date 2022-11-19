@@ -7,7 +7,4 @@
 
 \include "paper.ly"
   
-  
-
-\jig_rita_nant
-\rita_nant
+\tom_lloyd
