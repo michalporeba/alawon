@@ -8,6 +8,7 @@
 \include "scores/march_b.ly"
 \include "scores/march_c.ly"
 \include "scores/mumbles_hornpipe.ly"
+\include "scores/nantypal.ly"
 \include "scores/rita_nant.ly"
 \include "scores/swansea_hornpipe.ly"
 \include "scores/tom_lloyd.ly"
