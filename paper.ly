@@ -58,7 +58,7 @@
     }
     
     evenFooterMarkup = \markup {
-      \on-the-fly \not-first-page
+      \on-the-fly \if \not-first-page
       \column {
         \fill-line {
           \right-column {
