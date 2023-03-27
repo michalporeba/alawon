@@ -58,7 +58,7 @@
     }
     
     evenFooterMarkup = \markup {
-      \on-the-fly \if \not-first-page
+      \unless \on-first-page
       \column {
         \fill-line {
           \right-column {
@@ -69,7 +69,7 @@
           }
           \left-column { 
             \vspace #0.25
-            \bold \on-the-fly \not-first-page \skip-page-number-range #'(0 0)
+            \bold \unless \on-first-page \skip-page-number-range #'(0 0)
             \vspace #0.75
           }
           
@@ -77,7 +77,7 @@
       }
     }
     oddFooterMarkup = \markup {
-      \on-the-fly \not-first-page
+      \unless \on-first-page
       \column {
         \fill-line {
           \left-column {
@@ -88,7 +88,7 @@
           }
           \right-column { 
             \vspace #0.25
-            \bold \on-the-fly \not-first-page \skip-page-number-range #'(0 0)
+            \bold \unless \on-first-page \skip-page-number-range #'(0 0)
             \vspace #0.75
           }
         }
