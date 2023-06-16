@@ -47,5 +47,8 @@ draft_date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     \pageBreak 
     \rita_nant
     \jig_rita_nant
+
+    \pageBreak 
+    \mysydd
   } %bookpart
 } %book

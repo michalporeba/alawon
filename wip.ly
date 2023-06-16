@@ -7,4 +7,4 @@
 
 \include "paper.ly"
   
-\nantypal
+\mysydd
