@@ -41,7 +41,7 @@ dyfatty_sheppans_melody = \relative d' {
 dyfatty_sheppans = \score {
   \header { 
     title = \dyfatty_sheppans_title
-    form = "form: A B A B A"
+    form = "form: A A' B A' B A"
   }
   \dyfatty_sheppans_melody
 } %score
