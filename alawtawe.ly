@@ -7,8 +7,8 @@ draft_date = #(strftime "%Y-%m-%d" (localtime (current-time)))
   
 \book {
   \header { 
-    title = "Alawon o Abertawe"
-    subtitle = ""
+    title = "Casgliad Ceri"
+    subtitle = "Alawon Ardal Abertawe"
     copyright = ""
     tagline = \markup { \smaller { "Fersiwn" \draft_date } }
   }
@@ -31,6 +31,7 @@ draft_date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
     \pageBreak 
     \nantypal
+    \swansea_races
 
     \pageBreak 
     \cwm_felin

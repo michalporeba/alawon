@@ -7,4 +7,4 @@
 
 \include "paper.ly"
   
-\merch_y_ffeiriad
+\swansea_races

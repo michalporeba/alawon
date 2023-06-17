@@ -27,8 +27,8 @@
           
           \vspace #9
           \line { \fontsize #11 \override #'(font-name . "Indie Flower") \fromproperty #'header:title }
-          \vspace #1.5
-          %\line { \fontsize #6 \override #'(font-name . "Indie Flower") "Casgliad Ceri Rhys Matthews" }
+          \vspace #16
+          \line { \fontsize #9 \override #'(font-name . "Indie Flower") \fromproperty #'header:subtitle }
           \vspace #0.5
           
         }

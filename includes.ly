@@ -13,6 +13,7 @@
 \include "scores/nantypal.ly"
 \include "scores/rita_nant.ly"
 \include "scores/swansea_hornpipe.ly"
+\include "scores/swansea_races.ly"
 \include "scores/tom_lloyd.ly"
 \include "scores/tom_rosser.ly"
 \include "scores/valparaiso.ly"
