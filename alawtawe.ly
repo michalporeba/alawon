@@ -50,5 +50,6 @@ draft_date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
     \pageBreak 
     \mysydd
+    \merch_y_ffeiriad
   } %bookpart
 } %book
