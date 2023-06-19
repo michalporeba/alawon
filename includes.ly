@@ -4,6 +4,7 @@
 \include "scores/cwm_felin.ly"
 \include "scores/dyfatty_sheppans.ly"
 \include "scores/dywetydd.ly"
+\include "scores/maizey_dance.ly"
 \include "scores/march_a.ly"
 \include "scores/march_b.ly"
 \include "scores/march_c.ly"
