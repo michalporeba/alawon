@@ -19,3 +19,4 @@
 \include "scores/tom_lloyd.ly"
 \include "scores/tom_rosser.ly"
 \include "scores/valparaiso.ly"
+\include "scores/waunlwyd.ly"
