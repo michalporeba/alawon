@@ -23,6 +23,7 @@ i_lawr_ar_brenin_melody = \relative g' {
 
   \repeat volta 2 {
     \time 9/8
+    \tempo \markup {\rhythm { 8[ 8] } = \rhythm { 8[ 8 8] }}
     e4 b'8 c4 b8 a g a 
     b4 a8 g4 fis8 g a b 
     e4 b8 c4 b8 a g a 
