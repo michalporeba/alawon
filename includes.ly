@@ -5,6 +5,7 @@
 \include "scores/dyfatty_sheppans.ly"
 \include "scores/dywetydd.ly"
 \include "scores/i_lawr_ar_brenin.ly"
+\include "scores/laleston_whim.ly"
 \include "scores/maizey_dance.ly"
 \include "scores/march_a.ly"
 \include "scores/march_b.ly"

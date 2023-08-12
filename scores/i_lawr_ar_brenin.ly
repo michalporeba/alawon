@@ -14,7 +14,7 @@ i_lawr_ar_brenin_melody = \relative g' {
   
   g4 e8 d e4 
   g4 fis8 g g16 a b8 
-  a8 e e d e \breathe g 
+  g4 e8 d e \breathe g 
   fis4 d fis16 g a8 
   g8 e e d e4 
   g4 e fis16 g a8 
