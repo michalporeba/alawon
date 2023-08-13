@@ -1,7 +1,7 @@
 % recorded on 2023-08-12 
 % transcription from Ceri Rhys Matthews 
 
-laleston_title = "Laleston Whim / Miss Bennetts"
+laleston_title = "The Laleston Whim / Miss Bennett's"
 
 laleston_common =  {
   \time 4/4

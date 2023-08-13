@@ -1,7 +1,7 @@
 % written 2022-09-19 
 % transcription from Ceri Rhys Matthews 
 
-mumbles_hornpipe_title = "Mumbles Hornpipe"
+mumbles_hornpipe_title = "The Mumbles Hornpipe"
 
 mumbles_hornpipe_common =  {
   \time 4/4

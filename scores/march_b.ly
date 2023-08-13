@@ -1,7 +1,7 @@
 % recorded on 2022-09-17 
 % transcription from Ceri Rhys Matthews 
 
-march_b_title = "Penderryn Plate"
+march_b_title = "The Penderi Plate"
 
 march_b_common =  {
   \time 4/4

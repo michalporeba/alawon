@@ -1,7 +1,7 @@
 % recorded spring 2023
 % transcription from Ceri Rhys Matthews 
 
-maizey_dance_title = "The Spirit of the Maizey Dance"
+maizey_dance_title = "The Spirit Of The Mazy Dance"
 
 maizey_dance_common =  {
   \time 9/8

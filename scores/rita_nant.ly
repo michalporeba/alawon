@@ -1,8 +1,8 @@
 % recorded on 2022-10-01 
 % transcription from Ceri Rhys Matthews 
 
-rita_nant_title = "Rita Nant Wrth Gwta Ty"
-jig_rita_nant_title = "Jig Rita Nant"
+rita_nant_title = "Ryt Y Nant Wrth Gwt Y Tŷ"
+jig_rita_nant_title = "Jig Ryt Y Nant"
 
 rita_nant_common =  {
   \time 2/4

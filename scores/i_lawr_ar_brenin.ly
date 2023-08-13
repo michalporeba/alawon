@@ -1,7 +1,7 @@
 % recorded spring 2023
 % transcription from Ceri Rhys Matthews 
 
-i_lawr_ar_brenin_title = "I Lawr a'r Brenin"
+i_lawr_ar_brenin_title = "I Lawr Â'r Brenin"
 
 i_lawr_ar_brenin_common =  {
   \time 3/4

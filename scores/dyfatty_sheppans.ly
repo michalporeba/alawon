@@ -1,7 +1,7 @@
 % recorded on 2022-11-12 
 % transcription from Ceri Rhys Matthews 
 
-dyfatty_sheppans_title = "Dyfatty Sheppans"
+dyfatty_sheppans_title = "The Dyfatty Sheppans"
 
 dyfatty_sheppans_common =  {
   \time 2/4

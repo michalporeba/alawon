@@ -1,7 +1,7 @@
 % written 2022-09-19 
 % transcription from Ceri Rhys Matthews 
 
-valparaiso_title = "Valparaíso"
+valparaiso_title = "The Valparaiso"
 
 valparaiso_common =  {
   \time 6/8

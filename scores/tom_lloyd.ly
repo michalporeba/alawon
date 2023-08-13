@@ -1,7 +1,7 @@
 % recorded on 2022-10-01 
 % transcription from Ceri Rhys Matthews 
 
-tom_lloyd_title = "Tom Lloyd"
+tom_lloyd_title = "Tomos Lloyd o Dreforus"
 
 tom_lloyd_common =  {
   \time 2/2

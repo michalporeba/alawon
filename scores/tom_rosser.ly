@@ -1,8 +1,8 @@
 % recorded on 2022-09-17
 % transcription from Ceri Rhys Matthews 
 
-tom_rosser_title = "Tom Rosser"
-tom_rosser_pencader_title = "Tom Rosser o Bencader"
+tom_rosser_title = "The Tom Rosser"
+tom_rosser_pencader_title = "The Tom Rosser o Bencader"
 
 tom_rosser_common =  {
   \time 6/8

@@ -1,7 +1,7 @@
 % recorded on 2022-10-01 
 % transcription from Ceri Rhys Matthews 
 
-cwm_felin_title = "Cwm Felin"
+cwm_felin_title = "The Cwm Felin"
 
 cwm_felin_common =  {
   \time 2/2

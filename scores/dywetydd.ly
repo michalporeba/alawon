@@ -2,7 +2,7 @@
 % minuette 
 % transcription from Ceri Rhys Matthews 
 
-dywetydd_title = "Ar Dywetydd Teg o Ebrill"
+dywetydd_title = "Ar Diwetydd Teg O Ebrill"
 
 dywetydd_common =  {
   \time 3/4

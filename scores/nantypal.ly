@@ -2,7 +2,7 @@
 % minuette 
 % transcription from Ceri Rhys Matthews 
 
-nantypal_title = "Nant y Pâl"
+nantypal_title = "Nant-y-Pâl"
 
 nantypal_common =  {
   \time 6/4

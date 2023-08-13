@@ -1,7 +1,7 @@
 % written 2023-06-17 
 % transcription from Ceri Rhys Matthews 
 
-merch_y_ffeiriad_title = "Merch y Ffeiriad"
+merch_y_ffeiriad_title = "Merch y Ffeirad"
 
 merch_y_ffeiriad_common =  {
   \time 4/4

@@ -1,7 +1,7 @@
 % recorded on 2022-09-17 
 % transcription from Ceri Rhys Matthews 
 
-march_a_title = "Go at Swansea"
+march_a_title = "The Go At Swansea"
 
 march_a_common =  {
   \time 4/4

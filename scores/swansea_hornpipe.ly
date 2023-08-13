@@ -1,7 +1,7 @@
 % written 2022-09-19 
 % transcription from Ceri Rhys Matthews 
 
-swansea_hornpipe_title = "Swansea Hornpipe"
+swansea_hornpipe_title = "The Swansea Hornpipe"
 
 swansea_hornpipe_common =  {
   \time 4/4

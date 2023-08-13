@@ -1,7 +1,7 @@
 % written 2023-06-17 
 % transcription from Ceri Rhys Matthews 
 
-swansea_races_title = "Swansea Races"
+swansea_races_title = "The Swansea Races"
 
 swansea_races_common =  {
   \time 4/4
