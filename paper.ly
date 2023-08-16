@@ -52,7 +52,12 @@
         }
         \right-column {  
           \vspace #1
-          \typewriter \line { \fromproperty #'header:form }
+          \line { 
+            \fontsize #0.25 \override #'(font-name . "Indie Flower")  
+            \fromproperty #'header:composer }
+          \line { 
+            \fontsize #0.25 \override #'(font-name . "Indie Flower")
+            \fromproperty #'header:form }
         }
       }
     }
