@@ -61,5 +61,8 @@ draft_date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     \pageBreak
     \waunlwyd
     \tower_colliery
+
+    \pageBreak 
+    \miss_talbots
   } %bookpart
 } %book

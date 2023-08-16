@@ -11,6 +11,7 @@
 \include "scores/march_b.ly"
 \include "scores/march_c.ly"
 \include "scores/merch_y_ffeiriad.ly"
+\include "scores/miss_talbots.ly"
 \include "scores/mumbles_hornpipe.ly"
 \include "scores/mysydd.ly"
 \include "scores/nantypal.ly"
