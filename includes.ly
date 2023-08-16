@@ -19,5 +19,6 @@
 \include "scores/swansea_races.ly"
 \include "scores/tom_lloyd.ly"
 \include "scores/tom_rosser.ly"
+\include "scores/tower_colliery.ly"
 \include "scores/valparaiso.ly"
 \include "scores/waunlwyd.ly"
