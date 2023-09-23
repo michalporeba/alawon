@@ -64,5 +64,6 @@ draft_date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
     \pageBreak 
     \miss_talbots
+    \glowty_pengwern
   } %bookpart
 } %book
