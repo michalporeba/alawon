@@ -25,3 +25,4 @@
 \include "scores/tower_colliery.ly"
 \include "scores/valparaiso.ly"
 \include "scores/waunlwyd.ly"
+\include "scores/willie_taylor.ly"

@@ -40,8 +40,8 @@ cape_horner_melody = \relative d'' {
     d4 d8 g fis4 fis8 a
   }
   \alternative {
-    { g4 g8 fis g4 fis'8}
-    { g,4 g8 fis g2 }
+    { g4 g8 fis g4. a8}
+    { g4 g8 fis g2 }
   }
 
   \bar "|."
