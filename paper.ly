@@ -26,9 +26,9 @@
         \center-column {
           
           \vspace #9
-          \line { \fontsize #11 \override #'(font-name . "Indie Flower") \fromproperty #'header:title }
+          \line { \fontsize #13 \override #'(font-name . "Indie Flower") \fromproperty #'header:title }
           \vspace #16
-          \line { \fontsize #9 \override #'(font-name . "Indie Flower") \fromproperty #'header:subtitle }
+          \line { \fontsize #8 \override #'(font-name . "Indie Flower") \fromproperty #'header:subtitle }
           \vspace #0.5
           
         }

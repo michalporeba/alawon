@@ -7,8 +7,8 @@ draft_date = #(strftime "%Y-%m-%d" (localtime (current-time)))
   
 \book {
   \header { 
-    title = "Casgliad Ceri"
-    subtitle = "Alawon Ardal Abertawe"
+    title = "Fâs Gopr"
+    subtitle = "still drawing of a theoretical object"
     copyright = ""
     tagline = \markup { \smaller { "Fersiwn" \draft_date } }
   }
