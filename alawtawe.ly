@@ -72,6 +72,7 @@ draft_date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     \pageBreak
     \willie_taylor
     \zongals
+    \abraham_ace
 
     \pageBreak
     \trip_to_fortes

@@ -1,5 +1,6 @@
 \include "helpers.ly"
 
+\include "scores/abraham_ace.ly"
 \include "scores/beau_nash.ly"
 \include "scores/cape_horner.ly"
 \include "scores/cwm_felin.ly"
