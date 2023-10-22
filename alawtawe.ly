@@ -68,6 +68,12 @@ draft_date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
     \pageBreak 
     \cape_horner
+
+    \pageBreak
     \willie_taylor
+    \zongals
+
+    \pageBreak
+    \trip_to_fortes
   } %bookpart
 } %book
