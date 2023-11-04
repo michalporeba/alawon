@@ -26,7 +26,7 @@ draft_date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     \swansea_hornpipe
     
     \pageBreak 
-    \valparaiso
+    \valparaiso %6/8
     \dywetydd
 
     \pageBreak 
@@ -38,8 +38,11 @@ draft_date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     \tom_lloyd 
 
     \pageBreak
-    \tom_rosser
-    \tom_rosser_pencader
+    \tom_rosser %6/8
+    \tom_rosser_pencader  %6/8 mostly
+
+    \pageBreak
+    \round_bracelet %6/8
 
     \pageBreak 
     \beau_nash

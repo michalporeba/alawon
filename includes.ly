@@ -1,5 +1,4 @@
 \include "helpers.ly"
-
 \include "scores/abraham_ace.ly"
 \include "scores/beau_nash.ly"
 \include "scores/cape_horner.ly"
@@ -19,6 +18,7 @@
 \include "scores/mysydd.ly"
 \include "scores/nantypal.ly"
 \include "scores/rita_nant.ly"
+\include "scores/round_bracelet.ly"
 \include "scores/swansea_hornpipe.ly"
 \include "scores/swansea_races.ly"
 \include "scores/tom_lloyd.ly"
