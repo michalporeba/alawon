@@ -1,16 +1,16 @@
 % recorded on 2022-09-17 
 % transcription from Ceri Rhys Matthews 
 
-march_a_title = "The Go At Swansea"
+go_at_swansea_title = "The Go At Swansea"
 
-march_a_common =  {
+go_at_swansea_common =  {
   \time 4/4
   \clef treble 
   \key g \major
 }
 
-march_a_melody = \relative d'' {
-  \march_a_common 
+go_at_swansea_melody = \relative d'' {
+  \go_at_swansea_common 
 
   \repeat volta 2 {
     d8. b16 g8 b d b g4
@@ -27,10 +27,11 @@ march_a_melody = \relative d'' {
   }
 }
 
-march_a = \score {
+go_at_swansea = \score {
   \header { 
-    title = \march_a_title
+    title = \go_at_swansea_title
+    composer = "William Burton Harp"
   }
-  \march_a_melody
+  \go_at_swansea_melody
 } %score
   

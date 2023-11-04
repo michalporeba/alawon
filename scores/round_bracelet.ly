@@ -1,7 +1,8 @@
 % written 2023-11-04 
 % transcription from Ceri Rhys Matthews on 2022-09-17 and 2023-11-04
+% Ceri added the "under the starry coat of dawn" to the title, "because it needed adding"
 
-round_bracelet_title = "Round Bracelet"
+round_bracelet_title = "Round Bracelet (under the starry coat of dawn)"
 
 round_bracelet_common =  {
   \time 6/8

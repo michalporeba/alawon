@@ -1,5 +1,6 @@
 % recorded on 2022-10-01 
 % transcription from Ceri Rhys Matthews 
+% a reel. 
 
 cwm_felin_title = "The Cwm Felin"
 

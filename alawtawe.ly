@@ -17,7 +17,7 @@ draft_date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     \pageBreak
     
     \pageBreak
-    \march_a % the go at swansea
+    \go_at_swansea % 4/4 
     \march_b % the penderry plate
     \march_c % the crymlyn races
 
@@ -26,7 +26,7 @@ draft_date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     \swansea_hornpipe
     
     \pageBreak 
-    \valparaiso %6/8
+    \valparaiso %6/8 jig
     \dywetydd
 
     \pageBreak 
@@ -34,7 +34,7 @@ draft_date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     \swansea_races
 
     \pageBreak 
-    \cwm_felin
+    \cwm_felin %4/4 reel
     \tom_lloyd 
 
     \pageBreak
