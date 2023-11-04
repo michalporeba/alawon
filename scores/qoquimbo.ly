@@ -2,16 +2,16 @@
 % transcription from Ceri Rhys Matthews 
 % a Gower maritime melody recorded with Abram Ace and Gleaning the Zongals. 
 
-maritime_a_title = "A maritime melody"
+qoquimbo_title = "Bound for old Qoquimbo"
 
-maritime_a_common =  {
+qoquimbo_common =  {
   \time 12/8
   \clef treble 
   \key d \major
 }
 
-maritime_a_melody = \relative d'' {
-  \maritime_a_common 
+qoquimbo_melody = \relative d'' {
+  \qoquimbo_common 
 
   a8. b16 a8 a b d fis4 fis8 fis e d 
   fis4. e4 d8 b4 b8 d4 b8
@@ -38,10 +38,10 @@ maritime_a_melody = \relative d'' {
   \bar "|."
 }
 
-maritime_a = \score {
+qoquimbo = \score {
   \header { 
-    title = \maritime_a_title
+    title = \qoquimbo_title
   }
-  \maritime_a_melody
+  \qoquimbo_melody
 } %score
   
