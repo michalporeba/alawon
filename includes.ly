@@ -28,5 +28,6 @@
 \include "scores/trip_to_fortes.ly"
 \include "scores/valparaiso.ly"
 \include "scores/waunlwyd.ly"
+\include "scores/will_griffiths.ly"
 \include "scores/willie_taylor.ly"
 \include "scores/zongals.ly"

@@ -71,6 +71,7 @@ draft_date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
     \pageBreak 
     \cape_horner
+    \will_griffiths
 
     \pageBreak
     \qoquimbo
