@@ -1,4 +1,4 @@
-% written 2023-06-17 
+% written 2023-02-25
 % transcription from Ceri Rhys Matthews 
 
 tirdeunaw_title = "Tirdeunaw"
