@@ -53,8 +53,8 @@ draft_date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     \jig_rita_nant
 
     \pageBreak 
-    \mysydd
-    \merch_y_ffeiriad
+    \mysydd % 6/8
+    \merch_y_ffeiriad % 4/4
 
     \pageBreak
     \maizey_dance
@@ -71,7 +71,7 @@ draft_date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
     \pageBreak 
     \cape_horner
-    \will_griffiths
+    \will_griffiths % 2/2
 
     \pageBreak
     \qoquimbo
@@ -81,5 +81,8 @@ draft_date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     \zongals
     \abraham_ace
     \trip_to_fortes
+
+    \pageBreak 
+    \tirdeunaw
   } %bookpart
 } %book

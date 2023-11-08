@@ -22,6 +22,7 @@
 \include "scores/round_bracelet.ly"
 \include "scores/swansea_hornpipe.ly"
 \include "scores/swansea_races.ly"
+\include "scores/tirdeunaw.ly"
 \include "scores/tom_lloyd.ly"
 \include "scores/tom_rosser.ly"
 \include "scores/tower_colliery.ly"
