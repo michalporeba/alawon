@@ -43,6 +43,7 @@ draft_date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
     \pageBreak
     \round_bracelet %6/8
+    \tirdeunaw %4/4
 
     \pageBreak 
     \beau_nash
@@ -81,8 +82,5 @@ draft_date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     \zongals
     \abraham_ace
     \trip_to_fortes
-
-    \pageBreak 
-    \tirdeunaw
   } %bookpart
 } %book
