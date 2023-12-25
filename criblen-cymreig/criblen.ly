@@ -120,3 +120,21 @@ commonLayout = \layout{
   }
   \commonLayout
 }
+
+\score {
+  \new Staff \relative g' {
+    \staffMagnification
+    \clef treble
+
+    \miniTitle "Torth o Fara"
+    \key g \major \time 6/8 \partial 8
+    d8 g4 g8 g4 a8 g8 fis e d4 d8 g4 g8 b4 s8 \bar ""
+    \stopStaff s2. \startStaff \bar ""
+
+    \miniTitle "Glandyfi"
+    \key g \major \time 6/8 \partial 8
+    d,8 g4 g8 g4 b8 d4 c8 b4 g8 a4 a8 s4.
+    \bar ""
+  }
+  \commonLayout
+}
