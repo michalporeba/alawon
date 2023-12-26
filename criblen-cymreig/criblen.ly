@@ -252,3 +252,25 @@ commonLayout = \layout{
   }
   \commonLayout
 }
+
+\score {
+  \new Staff \relative a' {
+    \staffMagnification
+    \clef treble
+
+    \miniTitle "Tŷ Coch Caerdydd"
+    \key g \major \time 4/4 \partial 4
+    b8 a g4 g' g8 fis e4 d2 c4 b c e s2 \bar ""
+    \stopStaff s1 \startStaff \bar ""
+
+    \miniTitle "Mynydd Drumau"
+    \key e \minor \time 4/4 \partial 4
+    g,8 fis e4 e8 fis g4 g8 a b4 d8 b e b s4 \bar ""
+    \stopStaff s1 \startStaff \bar ""
+    
+    \miniTitle "Sawdl y Fuwch"
+    \key e \minor \time 4/4 \partial 4
+    b4 e8 fis g fis e4 dis e2. d8 c b4 g s4 \bar ""
+  }
+  \commonLayout
+}
