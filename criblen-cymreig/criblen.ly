@@ -16,8 +16,12 @@ miniTitle = #(define-scheme-function
 
 \paper {
   #(set-paper-size "a5")
-  ragged-right = ##t  % Aligns scores to the left
+  ragged-right = ##t 
+  ragged-last-bottom = ##t
+  ragged-bottom = ##t
   indent = 0
+  score-system-spacing = #'((basic-distance . 4) (minimum-distance . 4) (padding . 3))
+  %annotate-spacing = ##t 
 }
 
 staffMagnification = { \magnifyStaff #0.55 }
@@ -81,19 +85,74 @@ commonLayout = \layout{
   \commonLayout
 }
 
+%\score {
+%  \new Staff \relative a'' {
+%    \staffMagnification
+%    \clef treble
+
+%    \miniTitle "Tom Jones"
+%    \key d \major \time 6/8
+%    a4 a,8 g'4 a,8 fis'4 s8 \bar ""
+%    \stopStaff s4. \startStaff \bar ""
+
+%    \miniTitle "Y Derwydd"
+%    \key d \major \time 6/8
+%    fis,8 g a a fis a b s4 \bar ""
+%    \stopStaff s4. \startStaff \bar ""
+
+%    \miniTitle "Hela'r Sgyfarnog"
+%    \key d \major \time 6/8
+%    d4 d,8 fis g a b4 e8 cis b a d4 d,8 s4 
+%    \stopStaff s8 s2. \startStaff \bar ""
+
+%    \miniTitle "Tŷ Gardd"
+%    \key g \major \time 6/8
+%    b'4 g8 g fis g b4 g8 g fis g a4 s4
+%  }
+%  \commonLayout
+%}
+
 \score {
-  \new Staff \relative d'' {
+  \new Staff \relative a'' {
     \staffMagnification
     \clef treble
 
+    \miniTitle "Tom Jones"
+    \key d \major \time 6/8
+    a4 a,8 g'4 a,8 fis'4 a,8 e'4 a,8 d4 fis8 s8 
+    \stopStaff s4 s2. \startStaff \bar ""
+
     \miniTitle "Hela'r Sgyfarnog"
     \key d \major \time 6/8
-    d4 d,8 fis g a b4 e8 cis b a d4 d,8 s4 
-    \stopStaff s8 s2. \startStaff \bar ""
+    d4 d,8 fis g a b4 e8 cis b a d4 d,8 s8 
+    \stopStaff s4 s2. \startStaff \bar ""
+
+    \miniTitle "Y Derwydd"
+    \key d \major \time 6/8
+    fis8 g a a fis a b g b a4. b8 cis d s4. \bar ""
+  }
+  \commonLayout
+}
+
+\score {
+  \new Staff \relative g' {
+    \staffMagnification
+    \clef treble
 
     \miniTitle "Tŷ Gardd"
     \key g \major \time 6/8
-    b'4 g8 g fis g b4 g8 g fis g a4 s4
+    b4 g8 g fis g b4 g8 g fis g a4 s4
+    \stopStaff s4 s2. \startStaff \bar ""
+
+    \miniTitle "Torth o Fara"
+    \key g \major \time 6/8 \partial 8
+    d,8 g4 g8 g4 a8 g8 fis e d4 d8 g4 g8 b4 s8 \bar ""
+    \stopStaff s2. \startStaff \bar ""
+
+    \miniTitle "Glandyfi"
+    \key g \major \time 6/8 \partial 8
+    d,8 g4 g8 g4 b8 d4 c8 b4 g8 a4 a8 s4.
+    \bar ""
   }
   \commonLayout
 }
@@ -126,15 +185,20 @@ commonLayout = \layout{
     \staffMagnification
     \clef treble
 
-    \miniTitle "Torth o Fara"
-    \key g \major \time 6/8 \partial 8
-    d8 g4 g8 g4 a8 g8 fis e d4 d8 g4 g8 b4 s8 \bar ""
-    \stopStaff s2. \startStaff \bar ""
+    \miniTitle "Hyd y Frwynen"
+    \key e \minor \time 2/2 
+    e4 b' b a8 g fis4. e8 e4 dis e fis s2 \bar ""
+    \stopStaff s1 \startStaff \bar ""
 
-    \miniTitle "Glandyfi"
-    \key g \major \time 6/8 \partial 8
-    d,8 g4 g8 g4 b8 d4 c8 b4 g8 a4 a8 s4.
+    \miniTitle "Dŵr Glân"
+    \key e \minor \time 2/2 \partial 4
+    e8 fis g4 g8 a fis4 fis8 g e4 e8 fis g fis g e
     \bar ""
+    \stopStaff s1 \startStaff \bar ""
+    
+    \miniTitle "Nyth y Gog"
+    \key e \minor \time 2/2 \partial 4
+    e8 fis g fis g fis e4 g'8 e d b a g s4
   }
   \commonLayout
 }
