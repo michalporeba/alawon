@@ -50,7 +50,7 @@ commonLayout = \layout{
     fis4 a s4
     \stopStaff s4 s1 \startStaff \bar ""
 
-    \miniTitle "Pant Corlan yr Ŵyn"
+    \miniTitle "Pant Corlan yr Wŷn"
     \key g \major \time 2/4
     g8 g16 a b8 g c8 a16 b c8 a b8 g g16 a b c d8 a s8
     \stopStaff s8 s2 \startStaff \bar ""
@@ -199,6 +199,56 @@ commonLayout = \layout{
     \miniTitle "Nyth y Gog"
     \key e \minor \time 2/2 \partial 4
     e8 fis g fis g fis e4 g'8 e d b a g s4
+  }
+  \commonLayout
+}
+
+\score {
+  \new Staff \relative g' {
+    \staffMagnification
+    \clef treble
+
+    \miniTitle "Y Ferch o Blwy Penderyn"
+    \key g \major \time 3/4 \partial 4 
+    d4 g2 g4 fis4. e8 d4 g2 g4 e s2 \bar ""
+    \stopStaff s2. \startStaff \bar ""
+
+    \miniTitle "Morfa'r Frenhines"
+    \key e \minor \time 3/4 \partial 4
+    b4 e e8 fis g a b2 s4 \bar ""
+    \stopStaff s2. \startStaff \bar ""
+    
+    \miniTitle "Breuddwyd Rhysyn Bach"
+    \key e \minor \time 3/4 \partial 4
+    e,4 a4. b8 c d, e d e4 e8 fis d2 s4 \bar ""
+    \stopStaff s2. \startStaff \bar ""
+
+    \miniTitle "Walts Trefforest"
+    \key g \major \time 3/4 
+    g4 g8 d g b g4 s4
+  }
+  \commonLayout
+}
+
+
+\score {
+  \new Staff \relative a' {
+    \staffMagnification
+    \clef treble
+
+    \miniTitle "Ffaniglen"
+    \key d \major \time 2/2 \partial 2
+    a4. g8 fis4 d d2 d4 fis a s \bar ""
+    \stopStaff s1 \startStaff \bar ""
+
+    \miniTitle "Pigau'r Dur"
+    \key g \major \time 2/4 
+    d8. e16 d8 d d16 c d e d8 c16 d e8 d s4 \bar ""
+    \stopStaff s1 \startStaff \bar ""
+    
+    \miniTitle "Difyrrwch Gwŷr Llanfabon"
+    \key g \major \time 2/4 \partial 8
+    g,16 a b8 b b d g, g g8. a16 b8 b s4 \bar ""
   }
   \commonLayout
 }
