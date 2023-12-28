@@ -16,6 +16,10 @@ miniTitle = #(define-scheme-function
 
 \paper {
   #(set-paper-size "a5")
+
+  max-systems-per-page = 20
+  systems-per-page = 11
+
   ragged-right = ##t 
   ragged-last-bottom = ##t
   ragged-bottom = ##t
@@ -297,3 +301,22 @@ commonLayout = \layout{
   }
   \commonLayout
 }
+
+\score {
+  \new Staff \relative g' {
+    \staffMagnification
+    \clef treble
+
+    \miniTitle "Meillionen Meironnydd"
+    \key g \major \time 4/4 \partial 4
+    d4 g2 b4 a8 g fis g a b c4 s4 \bar ""
+    \stopStaff s1 \startStaff \bar ""
+
+    \miniTitle "Gwenynen Gwent"
+    \key g \major \time 4/4 \partial 4
+    d,4 g g8 fis g4 a b g d f e s4 s2 \bar ""
+    \stopStaff s4. s2. \startStaff \bar ""
+  }
+  \commonLayout
+}
+
