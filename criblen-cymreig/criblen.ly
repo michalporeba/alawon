@@ -274,3 +274,26 @@ commonLayout = \layout{
   }
   \commonLayout
 }
+
+\score {
+  \new Staff \relative g' {
+    \staffMagnification
+    \clef treble
+
+    \miniTitle "Val Pariso"
+    \key e \minor \time 6/8 
+    e8 b' e, b'4 c8 d e fis fis e d c4 s8 \bar ""
+    \stopStaff s4. s2. \startStaff \bar ""
+
+    \miniTitle "Bedd y Morwr"
+    \key g \major \time 6/8 \partial 8
+    d,8 g4 g8 b d b e4 fis8 g fis e d4 s8 \bar ""
+    \stopStaff s4. s2. \startStaff \bar ""
+
+    \miniTitle "Jig Esgob Bangor"
+    \key e \minor \time 6/8 \partial 8 
+    b8 e fis g fis g e dis e fis b,4 fis'8 d s8 \bar ""
+
+  }
+  \commonLayout
+}
