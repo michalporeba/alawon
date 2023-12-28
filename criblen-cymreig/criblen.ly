@@ -18,7 +18,7 @@ miniTitle = #(define-scheme-function
   #(set-paper-size "a5")
 
   max-systems-per-page = 20
-  systems-per-page = 11
+  systems-per-page = 13
 
   ragged-right = ##t 
   ragged-last-bottom = ##t
@@ -320,3 +320,46 @@ commonLayout = \layout{
   \commonLayout
 }
 
+\score {
+  \new Staff \relative g' {
+    \staffMagnification
+    \clef treble
+
+    \miniTitle "Consêt Arglwyddes Tre-ffael"
+    \key a \minor \time 3/4 \partial 4
+    e4 a2 e'4 c4. d8 e4 d2 c4 b4. a8 gis4 a2 s4 \bar ""
+    \stopStaff s2. \startStaff \bar ""
+
+    \miniTitle "Blodau'r Drain"
+    \key a \minor \time 3/4 \partial 4
+    e4 a2 b4 c b a e' d8 c b a b2 s4 \bar ""
+    \stopStaff s2. \startStaff \bar ""
+
+    \miniTitle "Glwysen"
+    \key a \minor \time 3/4 \partial 4
+    e,4 a2 a8 b c a b4 gis e a4 s2 \bar ""
+  }
+  \commonLayout
+}
+
+\score {
+  \new Staff \relative g' {
+    \staffMagnification
+    \clef treble
+
+    \miniTitle "???"
+    \key e \minor \time 4/4
+    e4 b' b a8 g fis4. e8 e4 dis e fis g s4 \bar ""
+    \stopStaff s1 \startStaff \bar ""
+
+    \miniTitle "Galar y Ffrancod"
+    \key e \minor \time 6/8 
+    e4 fis8 g a b a b c b4. a8 fis a s4. \bar ""
+    \stopStaff s2. \startStaff \bar ""
+
+    \miniTitle "Dawn y Tylwyth Teg"
+    \key e \minor \time 2/2 
+    g4 g8 e g4 g8 e g4 g8 fis e fis e fis g4 s4 \bar ""
+  }
+  \commonLayout
+}
