@@ -18,7 +18,7 @@ miniTitle = #(define-scheme-function
   #(set-paper-size "a5")
 
   max-systems-per-page = 20
-  systems-per-page = 13
+  systems-per-page = 14
 
   ragged-right = ##t 
   ragged-last-bottom = ##t
@@ -360,6 +360,25 @@ commonLayout = \layout{
     \miniTitle "Dawns y Tylwyth Teg"
     \key e \minor \time 2/2 
     g4 g8 e g4 g8 e g4 g8 fis e fis e fis g4 s4 \bar ""
+  }
+  \commonLayout
+}
+
+\score {
+  \new Staff \relative g' {
+    \staffMagnification
+    \clef treble
+
+    \miniTitle "Tomos Lloyd o Dreforys"
+    \key e \minor \time 2/2
+    a4. g8 e4 a a8 b c d e4 e e8 d c e d4 d8 e d8 b a g s2 \bar ""
+    \stopStaff s1 \startStaff \bar ""
+
+    \miniTitle "Swansea Races"
+    \key e \minor \time 2/2 
+    c8 b a gis a g e d a' b c d e fis \tuplet 3/2 { g fis g } a8  \bar ""
+    \stopStaff s2. \startStaff \bar ""
+
   }
   \commonLayout
 }
