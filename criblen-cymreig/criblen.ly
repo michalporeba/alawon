@@ -357,7 +357,7 @@ commonLayout = \layout{
     e4 fis8 g a b a b c b4. a8 fis a s4. \bar ""
     \stopStaff s2. \startStaff \bar ""
 
-    \miniTitle "Dawn y Tylwyth Teg"
+    \miniTitle "Dawns y Tylwyth Teg"
     \key e \minor \time 2/2 
     g4 g8 e g4 g8 e g4 g8 fis e fis e fis g4 s4 \bar ""
   }
