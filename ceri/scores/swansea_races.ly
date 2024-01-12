@@ -29,7 +29,7 @@ swansea_races_melody = \relative a' {
     g8 d b d g d b4
 
     a4 c?8 e a e cis e
-    d8 cis d e d cis! a4
+    d8 cis d e d c a4
 
     \tuplet 3/2 { a8 cis e } a e g e \tuplet 3/2 { d e fis }
     g4 g8 fis e d b4
