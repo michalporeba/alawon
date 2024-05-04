@@ -1,3 +1,4 @@
+\version "2.24.0"
 \paper {
     print-page-number = ##f
     first-page-number = -1

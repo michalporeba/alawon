@@ -1,4 +1,4 @@
-\version "2.18.2"
+\version "2.24.0"
 
 draft_date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 \include "includes.ly"

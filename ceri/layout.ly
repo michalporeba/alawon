@@ -1,3 +1,4 @@
+\version "2.24.0"
 #(define-markup-command (skip-page-number-range layout props arg) (number-list?)
   (let ((page-number (chain-assoc-get 'page:page-number props -1)))
     (interpret-markup layout props
@@ -9,7 +10,7 @@
   \context {
     \ChordNames
     \override ChordName.#'.font-size = #2
-    %\override ChordName #'font-series = #'bold 
+    %\override ChordName.font-series = #'bold 
    
     chordChanges = ##t
    
