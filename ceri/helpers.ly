@@ -15,13 +15,13 @@ hornpipe_tempo = \tempo \markup {
 
             \once \override Score.TextScript.Y-offset = #-1.5
             s4.^\markup{ \halign #0 \italic "=" }
-            
+
             \magnifyMusic 0.5 {
                 \override Score.SpacingSpanner.spacing-increment = #(* 1.2 0.5)
                 \relative c' { \stemUp \tuplet 3/2 {b8[ ~ b b]} }
             }
-        } 
-        
+        }
+
         \layout {
             ragged-right= ##t
             indent = 0

@@ -1,41 +1,41 @@
-\version "2.24.0"
+\version "2.18.2"
 
 draft_date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 \include "includes.ly"
 \include "layout.ly"
 \include "paper.ly"
-  
+
 \book {
-  \header { 
+  \header {
     title = "Fâs Gopr"
     subtitle = "still drawing of a theoretical object"
     copyright = ""
     tagline = \markup { \smaller { "Fersiwn" \draft_date } }
   }
- 
+
   \bookpart {
     \pageBreak
-    
+
     \pageBreak
-    \go_at_swansea % 4/4 
+    \go_at_swansea % 4/4
     \march_b % the penderry plate
     \march_c % the crymlyn races
 
-    \pageBreak 
+    \pageBreak
     \mumbles_hornpipe
     \swansea_hornpipe
-    
-    \pageBreak 
+
+    \pageBreak
     \valparaiso %6/8 jig
     \dywetydd
 
-    \pageBreak 
+    \pageBreak
     \nantypal
     \swansea_races
 
-    \pageBreak 
+    \pageBreak
     \cwm_felin %4/4 reel
-    \tom_lloyd 
+    \tom_lloyd
 
     \pageBreak
     \tom_rosser %6/8
@@ -45,15 +45,15 @@ draft_date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     \round_bracelet %6/8
     \tirdeunaw %4/4
 
-    \pageBreak 
+    \pageBreak
     \beau_nash
     \dyfatty_sheppans
 
-    \pageBreak 
+    \pageBreak
     \rita_nant
     \jig_rita_nant
 
-    \pageBreak 
+    \pageBreak
     \mysydd % 6/8
     \merch_y_ffeiriad % 4/4
 
@@ -66,21 +66,24 @@ draft_date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     \waunlwyd
     \tower_colliery
 
-    \pageBreak 
+    \pageBreak
     \miss_talbots
     \glowty_pengwern
 
-    \pageBreak 
+    \pageBreak
     \cape_horner
     \will_griffiths % 2/2
 
     \pageBreak
     \qoquimbo
     \willie_taylor
-    
+
     \pageBreak
     \zongals
     \abraham_ace
     \trip_to_fortes
+
+    \pageBreak
+    \llynllyw
   } %bookpart
 } %book
