@@ -4,6 +4,7 @@
 \include "scores/beau_nash.ly"
 \include "scores/cape_horner.ly"
 \include "scores/cwm_felin.ly"
+\include "scores/drumau.ly"
 \include "scores/dyfatty_sheppans.ly"
 \include "scores/dywetydd.ly"
 \include "scores/glowty_pengwern.ly"
