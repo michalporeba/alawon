@@ -1,13 +1,8 @@
 drumau_title = "Mynydd Drumau"
 
-drumau_common =  {
-  \time 2/2
-  \clef treble
-  \key e \minor
-}
-
 drumau_melody = \relative d' {
-  \drumau_common
+  \time 2/2
+  \key e \minor
 
   \repeat volta 2 {
     e4 e8 fis g4 g8 a
@@ -51,9 +46,22 @@ drumau_melody = \relative d' {
   \bar "|."
 }
 
+mandolin-tuning = \stringTuning <g d' a' e''>
+
 drumau = \score {
   \header {
     title = \drumau_title
   }
-  \drumau_melody
+  <<
+    \new Staff { 
+      \clef treble
+
+      \drumau_melody 
+    }
+    \new TabStaff {
+      \clef moderntab
+      \set TabStaff.stringTunings = #mandolin-tuning
+      \drumau_melody
+    }
+  >>
 } %score
