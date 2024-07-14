@@ -2,7 +2,7 @@
 % transcription from Ceri Rhys Matthews
 % one of three mid glamorgan early jigs
 
-mynnws_y_nhad_title = "Mynnws y Nhad Fyyd y Bad"
+mynnws_y_nhad_title = "Mynnws y Nhad Fynyd y Bad"
 
 mynnws_y_nhad_common =  {
   \time 6/8
