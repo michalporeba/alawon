@@ -19,6 +19,7 @@
 \include "scores/merch_y_ffeiriad.ly"
 \include "scores/miss_talbots.ly"
 \include "scores/mumbles_hornpipe.ly"
+\include "scores/mynnws_y_nhad.ly"
 \include "scores/mysydd.ly"
 \include "scores/nantypal.ly"
 \include "scores/qoquimbo.ly"

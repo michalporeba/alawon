@@ -89,5 +89,8 @@ draft_date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
     \pageBreak
     \drumau
+
+    \pageBreak
+    \mynnws_y_nhad
   } %bookpart
 } %book
