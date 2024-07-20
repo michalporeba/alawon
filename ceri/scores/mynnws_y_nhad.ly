@@ -14,10 +14,10 @@ mynnws_y_nhad_melody = \relative d' {
   \mynnws_y_nhad_common
 
   \repeat volta 2 {
-    fis4. fis8 e d
-    e8 fis g a4. 
-    d8 cis b a4 a8
-    b8 a g fis4.
+    fis4 fis8 fis e d
+    e8 fis g a4.
+    d8 cis b a4.
+    b8 a g fis8 e d
 
     fis4 fis8 fis e d
     e8 fis g a4. 
@@ -31,10 +31,10 @@ mynnws_y_nhad_melody = \relative d' {
     fis4. fis
     b8 a g fis e d
 
-    e4 e8 e d e
+    e4. e d e
     e8 d e e4.
     d'8 cis b a g fis
-    e8 fis e d4.
+    e4 fis8 d4.
   }
   \bar"|."
 }
