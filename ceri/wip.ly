@@ -19,4 +19,4 @@
 }
 
 %\drumau
-\mynnws_y_nhad
+\ysgyfarnog_dd

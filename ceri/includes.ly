@@ -36,4 +36,5 @@
 \include "scores/waunlwyd.ly"
 \include "scores/will_griffiths.ly"
 \include "scores/willie_taylor.ly"
+\include "scores/ysgyfarnog_dd.ly"
 \include "scores/zongals.ly"
