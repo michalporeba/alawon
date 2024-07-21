@@ -5,6 +5,7 @@
 \include "scores/bryn_y_don.ly"
 \include "scores/cape_horner.ly"
 \include "scores/cwm_felin.ly"
+\include "scores/dawn_hywel.ly"
 \include "scores/drumau.ly"
 \include "scores/dyfatty_sheppans.ly"
 \include "scores/dywetydd.ly"
