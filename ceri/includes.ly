@@ -12,6 +12,7 @@
 \include "scores/gelliwastad.ly"
 \include "scores/go_at_swansea.ly"
 \include "scores/i_lawr_ar_brenin.ly"
+\include "scores/king_of_swansea.ly"
 \include "scores/laleston_whim.ly"
 \include "scores/llyn_llyw.ly"
 \include "scores/maizey_dance.ly"

@@ -96,5 +96,6 @@ draft_date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
     \pageBreak
     \bryn_y_don
+    \king_of_swansea
   } %bookpart
 } %book

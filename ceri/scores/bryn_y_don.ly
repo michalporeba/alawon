@@ -1,6 +1,5 @@
 % recorded on 2024-07-13
 % transcription from Ceri Rhys Matthews
-% one of three mid glamorgan early jigs
 
 bryn_y_don_title = "Bryn y Don"
 
