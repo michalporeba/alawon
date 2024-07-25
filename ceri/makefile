@@ -4,3 +4,8 @@ all:
 wip:
 	clear
 	lilypond wip.ly
+
+test:
+	cd book && lilypond-book --output=out --pdf main.lytex
+	cd book/out && pdflatex main
+	open book/out/main.pdf
