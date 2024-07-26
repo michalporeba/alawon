@@ -7,6 +7,6 @@ wip:
 
 books:
 	cd book && lilypond-book --output=out --pdf dots.lytex
-	cd book/out && pdflatex --output-directory ./.. dots
+	cd book/out && xelatex --output-directory ./.. dots
 	rm -r book/out/
 	open book/dots.pdf

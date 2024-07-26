@@ -31,6 +31,6 @@
     \override KeySignature.#'font-size = #4
   }
   
-  #(layout-set-staff-size 12)
+  #(layout-set-staff-size 24)
   
 }
