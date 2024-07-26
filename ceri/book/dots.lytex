@@ -1,8 +1,8 @@
 \documentclass[a5paper]{book}
 \usepackage{blindtext, showframe}
 \usepackage[landscape]{geometry}
-\usepackage{xstring} % For string manipulation
 
+\geometry{margin=0.5cm}
 
 \title{Making the Marks}
 \begin{document}
@@ -11,9 +11,9 @@
 % \blindtext
 
 \section*{King of Swansea}
-\pagestyle{empty}
-\begin{lilypond}
-  \include "../layout.ly"
+\begin{lilypond}[staffsize=26]
+  \include "paper.ly"
+  \include "layout.ly"
   \include "../scores/king_of_swansea.ly"
   \king_of_swansea
 \end{lilypond}

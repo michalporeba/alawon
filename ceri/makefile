@@ -5,7 +5,8 @@ wip:
 	clear
 	lilypond wip.ly
 
-test:
-	cd book && lilypond-book --output=out --pdf main.lytex
-	cd book/out && pdflatex main
-	open book/out/main.pdf
+books:
+	cd book && lilypond-book --output=out --pdf dots.lytex
+	cd book/out && pdflatex --output-directory ./.. dots
+	rm -r book/out/
+	open book/dots.pdf
