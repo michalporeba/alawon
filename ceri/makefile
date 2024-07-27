@@ -1,4 +1,4 @@
-.PHONEY: poetry lytex
+.PHONY: poetry lytex
 
 SRC_DIR := scores
 LYTEX_DIR := templates/lytex
@@ -27,25 +27,3 @@ $(LYTEX_DIR)/%: poetry $(SRC_DIR)/%.ly
 clean:
 	rm -rf $(OUT_DIR)/*
 	rm -rf $(LYTEX_DIR)
-
-alls:
-	lilypond --loglevel=ERROR --output=alawon_abertawe ./alawtawe.ly
-
-
-books:
-	cd book && lilypond-book --output=out --pdf dots.lytex
-	cd book/out && xelatex --output-directory ./.. dots
-	rm -r book/out/
-	open book/dots.pdf
-
-single:
-	cd book && lilypond-book --output=out --pdf single.lytex
-	cd book/out && xelatex --output-directory ./.. single
-	open book/single.pdf
-
-print:
-
-
-
-compile:
-	echo "compile"
