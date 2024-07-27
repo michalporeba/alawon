@@ -1,11 +1,4 @@
 \version "2.24.0"
-#(define-markup-command (skip-page-number-range layout props arg) (number-list?)
-  (let ((page-number (chain-assoc-get 'page:page-number props -1)))
-    (interpret-markup layout props
-      (if (>= page-number (car arg))
-          (number->string (+ page-number (1+ (- (cadr arg) (car arg)))))
-          (chain-assoc-get 'page:page-number-string props -1)))))
-
 \layout {
   \context {
     \ChordNames

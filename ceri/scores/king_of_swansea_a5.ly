@@ -1,6 +1,9 @@
 % recorded on 2024-07-20
 % transcription from Ceri Rhys Matthews
 
+\include "../book/paper.ly"
+\include "../book/layout.ly"
+
 king_of_swansea_title = "King of Swansea"
 
 king_of_swansea_common =  {
@@ -37,7 +40,7 @@ king_of_swansea = \score {
   \king_of_swansea_melody
 } %score
 
-thedots = \score {
+\score {
   \header {
     title = \king_of_swansea_title
   }

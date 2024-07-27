@@ -10,3 +10,11 @@ books:
 	cd book/out && xelatex --output-directory ./.. dots
 	rm -r book/out/
 	open book/dots.pdf
+
+single:
+	cd book && lilypond-book --output=out --pdf single.lytex
+	cd book/out && xelatex --output-directory ./.. single
+	open book/single.pdf
+
+compile:
+	echo "compile"
