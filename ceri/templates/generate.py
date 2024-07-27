@@ -35,14 +35,20 @@ def get_tunes():
   def filter(id):
     return len(sys.argv) == 1 or id in sys.argv
 
-  return [
-    tune for tune in json.load(open('data.json')) if filter(tune.get('id'))
+  tunes = [
+    tune for tune in json.load(open('../data.json')) if filter(tune.get('id'))
   ]
 
+  for tune in tunes:
+    with open(f'../scores/{tune["id"]}.ly', 'r') as file:
+      tune["score"] = file.read()
 
+  return tunes
+
+  
 def main():
   tunes = get_tunes()
-
+  save(render_each(tunes, 'tune.ly'), 'lytex/{id}.ly')
   save(render_each(tunes, 'tune-in-dots.lytex'), 'lytex/dots/{id}.lytex')
   save(render_each(tunes, 'tune-in-mandolin.lytex'), 'lytex/mandolin/{id}.lytex')
 

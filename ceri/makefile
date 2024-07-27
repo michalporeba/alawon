@@ -28,6 +28,7 @@ $(OUT_DIR)/wip/%: $(LYTEX_DIR)/wip/%.lytex
 	cp $(LYTEX_DIR)/out/$*.pdf $(OUT_DIR)/wip/$*.pdf
 
 $(OUT_DIR)/dots/%: $(LYTEX_DIR)/dots/%.lytex
+	@echo "hello"
 	cd $(LYTEX_DIR) && lilypond-book --output=out --loglevel=ERROR --pdf dots/$*.lytex
 	cd $(LYTEX_DIR)/out && xelatex $*
 	mkdir -p $(OUT_DIR)/dots
@@ -39,19 +40,20 @@ $(OUT_DIR)/mandolin/%: $(LYTEX_DIR)/mandolin/%.lytex
 	mkdir -p $(OUT_DIR)/mandolin
 	cp $(LYTEX_DIR)/out/$*.pdf $(OUT_DIR)/mandolin/$*.pdf
 
-$(OUT_DIR)/%:
-	cd $(LYTEX_DIR) && lilypond-book --output=out --loglevel=ERROR --pdf $*.lytex
-	cd $(LYTEX_DIR)/out && xelatex $*
+$(OUT_DIR)/book.%:
+	@echo "generic"
+	cd $(LYTEX_DIR) && lilypond-book --output=out --loglevel=ERROR --pdf book.$*.lytex
+	cd $(LYTEX_DIR)/out && xelatex book.$*
 	mkdir -p $(OUT_DIR)
-	cp $(LYTEX_DIR)/out/$*.pdf $(OUT_DIR)/$*.pdf
+	cp $(LYTEX_DIR)/out/book.$*.pdf $(OUT_DIR)/book.$*.pdf
 
 # generate individual lytex files
 $(LYTEX_DIR)/dots/%.lytex: poetry $(SRC_DIR)/%.ly
-	echo "single part dots"
+	@echo "single part dots $*"
 	cd templates && poetry run python generate.py $*
 
 $(LYTEX_DIR)/mandolin/%.lytex: poetry $(SRC_DIR)/%.ly
-	echo "single part mandolin"
+	@echo "single part mandolin"
 	cd templates && poetry run python generate.py $*
 
 clean:

@@ -1,17 +1,11 @@
-% recorded on 2022-10-01 
-% transcription from Ceri Rhys Matthews 
-% a reel. 
-
-cwm_felin_title = "The Cwm Felin"
-
-cwm_felin_common =  {
+common =  {
   \time 2/2
   \clef treble 
   \key d \major
 }
 
-cwm_felin_melody = \relative d' {
-  \cwm_felin_common 
+melody = \relative d' {
+  \common 
   \swing_ceri
   \repeat volta 2 {
     fis4 fis g fis8 g 
@@ -40,24 +34,3 @@ cwm_felin_melody = \relative d' {
     a8 fis e fis d2
   }
 }
-
-cwm_felin = \score {
-  \header { 
-    title = \cwm_felin_title
-  }
-  \cwm_felin_melody
-} %score
-  
-dots = \score {
-  \header { 
-    title = \cwm_felin_title
-  }
-  \cwm_felin_melody
-} %score
-
-mandolin = \score {
-  \header { 
-    title = \cwm_felin_title
-  }
-  \cwm_felin_melody
-} %score

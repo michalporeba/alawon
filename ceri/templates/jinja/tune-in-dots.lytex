@@ -14,7 +14,7 @@
     \include "../paper.ly"
     \include "../layout.ly"
     \include "../helpers.ly"
-    \include "../../scores/{{id}}.ly"
+    \include "{{id}}.ly"
     \dots
   \end{lilypond}
 

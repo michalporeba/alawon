@@ -19,7 +19,7 @@
     \include "../paper.ly"
     \include "../layout.ly"
     \include "../helpers.ly"
-    \include "../../scores/{{tune.id}}.ly"
+    \include "{{id}}.ly"
     \dots
   \end{lilypond}
 
