@@ -5,16 +5,22 @@
 
 \geometry{margin=0.5cm}
 
+\title{Making the Marks}
+
 \begin{document}
+\maketitle
+
+{% for tune in tunes %}
 
   \setmainfont{Indie Flower}
-  \Huge{King of Swansea}
+  \Huge{ {{ tune.titles[0] }} }
 
   \begin{lilypond}[staffsize=26]
-    \include "paper.ly"
-    \include "layout.ly"
-    \include "../scores/king_of_swansea.ly"
-    \thedots
+    \include "../paper.ly"
+    \include "../layout.ly"
+    \include "../../scores/{{tune.id}}.ly"
+    \dots
   \end{lilypond}
 
+{% endfor %}
 \end{document}

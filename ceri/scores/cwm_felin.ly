@@ -48,3 +48,16 @@ cwm_felin = \score {
   \cwm_felin_melody
 } %score
   
+dots = \score {
+  \header { 
+    title = \cwm_felin_title
+  }
+  \cwm_felin_melody
+} %score
+
+mandolin = \score {
+  \header { 
+    title = \cwm_felin_title
+  }
+  \cwm_felin_melody
+} %score

@@ -37,7 +37,14 @@ king_of_swansea = \score {
   \king_of_swansea_melody
 } %score
 
-thedots = \score {
+dots = \score {
+  \header {
+    title = \king_of_swansea_title
+  }
+  \king_of_swansea_melody
+}
+
+mandolin = \score {
   \header {
     title = \king_of_swansea_title
   }
