@@ -13,6 +13,7 @@
   \begin{lilypond}[staffsize=26]
     \include "../paper.ly"
     \include "../layout.ly"
+    \include "../helpers.ly"
     \include "../../scores/{{id}}.ly"
     \dots
   \end{lilypond}
