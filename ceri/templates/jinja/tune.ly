@@ -2,39 +2,39 @@
 
 thedots = \score {
   \header {
-    title = "{{ titles[0] }}"
+    title = "{{ title }}"
+    {% if composer %}composer = "{{composer}}"{% endif %}
   }
   \new Staff {
     \clef treble
     \melody
   }
-  \layout {}
 }
 
 mandolin-tuning = \stringTuning <g d' a' e''>
 
 mandolin = \score {
   \header {
-    title = "{{ titles[0] }}"
+    title = "{{title}}"
+    {% if composer %}composer = "{{composer}}"{% endif %}
   }
   \new TabStaff {
     \clef moderntab
     \set TabStaff.stringTunings = #mandolin-tuning
     \melody
   }
-  \layout {}
 }
 
 guitar-tuning = \stringTuning <e a d' g' b' e''>
 
 guitar = \score {
   \header {
-    title = "{{ titles[0] }}"
+    title = "{{ title }}"
+    {% if composer %}composer = "{{composer}}"{% endif %}
   }
   \new TabStaff {
     \clef moderntab
     \set TabStaff.stringTunings = #guitar-tuning
     \melody
   }
-  \layout {}
 }

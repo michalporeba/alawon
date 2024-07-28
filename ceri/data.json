@@ -1,17 +1,44 @@
 [{
-  "id": "king_of_swansea",
+  "id": "go_at_swansea",
+  "title": "The Go at Swansea",
+  "composer": "William Burton Harp",
   "recording": {
-    "date": "2024-07-20",
+    "date": "2022-09-17",
     "performer": "Ceri Rhys Matthews",
     "location": "Elysium, Swansea"
   },
-  "titles": ["King of Swansea"]
+  "notes": "",
+  "rhythmn": {
+    "name": "march",
+    "signature": "4/4"
+  }
+}, {
+  "id": "abraham_ace",
+  "title": "Abraham Ace",
+  "recording": {
+    "date": "2022-10-29",
+    "performer": "Ceri Rhys Matthews",
+    "location": "Elysium, Swansea"
+  },
+  "notes": "A Gower melody, probably used to be a song",
+  "rhythmn": {
+    "signature": "12/8"
+  }
+}, {
+  "id": "king_of_swansea",
+  "title": "King of Swansea",
+  "recording": {
+    "date": "2024-07-20",
+    "performer": "Ceri Rhys Matthews",
+    "location": "Tremarchog"
+  }
 }, {
   "id": "cwm_felin",
-  "titles": ["Cwm Felin"],
+  "title": "Cwm Felin",
   "recording": {
     "date": "2022-10-01",
-    "performer": "Ceri Rhys Matthews"
+    "performer": "Ceri Rhys Matthews",
+    "location": "Elysium, Swansea"
   },
   "rhythm": {
     "name": "reel"

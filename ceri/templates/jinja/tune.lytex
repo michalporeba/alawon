@@ -6,9 +6,19 @@
 \geometry{margin=0.5cm}
 
 \begin{document}
-
+  
   \setmainfont{Indie Flower}
-  \Huge{ {{ titles[0] }} }
+  \begin{minipage}[b]{0.7\textwidth}
+    \hspace*{-0.5cm}
+    \Huge
+    \raisebox{0pt}[1cm][0.2cm]{\noindent {{title}} }
+  \end{minipage}%
+  \hfill%
+  \begin{minipage}[b]{0.3\textwidth}
+    \raggedleft
+    \raisebox{0pt}[0.5cm][0pt]{ {{composer}} }
+    \hspace{1.1cm}
+  \end{minipage}
 
   \begin{lilypond}[staffsize=26]
     \include "../paper.ly"
