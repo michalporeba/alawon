@@ -12,6 +12,7 @@
 
 {% for tune in tunes %}
 
+  \newpage
   \setmainfont{Indie Flower}
   \Huge{ {{ tune.titles[0] }} }
 
@@ -19,7 +20,7 @@
     \include "../paper.ly"
     \include "../layout.ly"
     \include "../helpers.ly"
-    \include "{{id}}.ly"
+    \include "{{tune.id}}.ly"
     \dots
   \end{lilypond}
 
