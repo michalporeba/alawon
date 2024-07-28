@@ -54,6 +54,7 @@ def main():
 
   if len(tunes) > 1:
     save(render_all(tunes, 'book-in-dots.lytex'), 'lytex/book.dots.lytex')
+    save(render_all(tunes, 'book-in-mandolin.lytex'), 'lytex/book.mandolin.lytex')
 
 
 if __name__ == '__main__':

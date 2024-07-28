@@ -51,8 +51,10 @@ $(LYTEX_DIR)/mandolin/%.lytex: poetry $(SRC_DIR)/%.ly
 	cd templates && poetry run python generate.py $*
 
 clean:
-	rm -rf $(OUT_DIR)/*
 	rm -rf $(LYTEX_DIR)
+
+make cleanall: clean
+	rm -rf $(OUT_DIR)/*
 
 wip: clean poetry prints/dots/king_of_swansea
 	open prints/dots/king_of_swansea.pdf

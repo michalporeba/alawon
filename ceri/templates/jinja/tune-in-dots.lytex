@@ -1,21 +1,3 @@
-\documentclass[a5paper]{book}
-\usepackage{blindtext, showframe}
-\usepackage[landscape]{geometry}
-\usepackage{fontspec}
+{% extends "tune.lytex" %}
 
-\geometry{margin=0.5cm}
-
-\begin{document}
-
-  \setmainfont{Indie Flower}
-  \Huge{ {{ titles[0] }} }
-
-  \begin{lilypond}[staffsize=26]
-    \include "../paper.ly"
-    \include "../layout.ly"
-    \include "../helpers.ly"
-    \include "{{id}}.ly"
-    \dots
-  \end{lilypond}
-
-\end{document}
+{% block content %}\dots{% endblock %}
