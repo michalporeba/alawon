@@ -13,6 +13,58 @@
     "signature": "4/4"
   }
 }, {
+  "id": "penderi_plate",
+  "title": "Penderi Plate",
+  "recording": {
+    "date": "2022-09-17",
+    "performer": "Ceri Rhys Matthews",
+    "location": "Elysium, Swansea"
+  },
+  "notes": "",
+  "rhythmn": {
+    "name": "march",
+    "signature": "4/4"
+  }
+}, {
+  "id": "crymlyn_races",
+  "title": "Crymlyn Races",
+  "recording": {
+    "date": "2022-09-17",
+    "performer": "Ceri Rhys Matthews",
+    "location": "Elysium, Swansea"
+  },
+  "notes": "",
+  "rhythmn": {
+    "name": "march",
+    "signature": "4/4"
+  }
+}, {
+  "id": "mumbles_hornpipe",
+  "title": "Mumbles Hornpipe",
+  "recording": {
+    "date": "2022-09-19",
+    "performer": "Ceri Rhys Matthews",
+    "location": "Elysium, Swansea"
+  },
+  "notes": "",
+  "rhythmn": {
+    "name": "hornpipe",
+    "signature": "4/4"
+  }
+}, {
+  "id": "swansea_hornpipe",
+  "title": "Swansea Hornpipe",
+  "recording": {
+    "date": "2022-09-19",
+    "performer": "Ceri Rhys Matthews",
+    "location": "Elysium, Swansea"
+  },
+  "notes": "",
+  "rhythmn": {
+    "name": "hornpipe",
+    "signature": "4/4"
+  }
+}, {
   "id": "abraham_ace",
   "title": "Abraham Ace",
   "recording": {

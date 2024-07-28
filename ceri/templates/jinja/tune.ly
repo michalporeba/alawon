@@ -19,9 +19,16 @@ mandolin = \score {
     {% if composer %}composer = "{{composer}}"{% endif %}
   }
   \new TabStaff {
+    \tabFullNotation
     \clef moderntab
     \set TabStaff.stringTunings = #mandolin-tuning
     \melody
+  }
+  \layout {
+    \context {
+      \Score
+      \override VerticalAxisGroup.system-system-spacing.minimum-distance = #25
+    }
   }
 }
 
