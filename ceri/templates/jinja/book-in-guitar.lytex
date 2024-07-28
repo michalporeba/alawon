@@ -1,0 +1,4 @@
+{% extends "book.lytex" %}
+
+{% block notation %}guitar tabs{% endblock %}
+{% block content %}\guitar{% endblock %}

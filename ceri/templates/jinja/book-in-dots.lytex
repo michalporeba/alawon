@@ -1,3 +1,4 @@
 {% extends "book.lytex" %}
 
-{% block content %}\dots{% endblock %}
+{% block notation %}the dots{% endblock %}
+{% block content %}\thedots{% endblock %}

@@ -1,5 +1,5 @@
 \documentclass[a5paper]{book}
-\usepackage{blindtext, showframe}
+\usepackage{blindtext}
 \usepackage[landscape]{geometry}
 \usepackage{fontspec}
 

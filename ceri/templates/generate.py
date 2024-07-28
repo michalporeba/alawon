@@ -50,10 +50,12 @@ def main():
   tunes = get_tunes()
   save(render_each(tunes, 'tune.ly'), 'lytex/{id}.ly')
   save(render_each(tunes, 'tune-in-dots.lytex'), 'lytex/dots/{id}.lytex')
+  save(render_each(tunes, 'tune-in-guitar.lytex'), 'lytex/guitar/{id}.lytex')
   save(render_each(tunes, 'tune-in-mandolin.lytex'), 'lytex/mandolin/{id}.lytex')
 
   if len(tunes) > 1:
     save(render_all(tunes, 'book-in-dots.lytex'), 'lytex/book.dots.lytex')
+    save(render_all(tunes, 'book-in-guitar.lytex'), 'lytex/book.guitar.lytex')
     save(render_all(tunes, 'book-in-mandolin.lytex'), 'lytex/book.mandolin.lytex')
 
 

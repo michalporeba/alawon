@@ -19,6 +19,7 @@ book_prints: $(BOOK_SOURCES:$(LYTEX_DIR)/%.lytex=$(OUT_DIR)/%)
 
 individual_prints: \
 	$(SOURCES:$(LYTEX_DIR)/dots/%.lytex=$(OUT_DIR)/dots/%) \
+	$(SOURCES:$(LYTEX_DIR)/guitar/%.lytex=$(OUT_DIR)/guitar/%) \
 	$(SOURCES:$(LYTEX_DIR)/mandolin/%.lytex=$(OUT_DIR)/mandolin/%)
 
 $(OUT_DIR)/dots/%: $(LYTEX_DIR)/dots/%.lytex
@@ -27,6 +28,12 @@ $(OUT_DIR)/dots/%: $(LYTEX_DIR)/dots/%.lytex
 	cd $(LYTEX_DIR)/out && xelatex $*
 	mkdir -p $(OUT_DIR)/dots
 	cp $(LYTEX_DIR)/out/$*.pdf $(OUT_DIR)/dots/$*.pdf
+
+$(OUT_DIR)/guitar/%: $(LYTEX_DIR)/guitar/%.lytex
+	cd $(LYTEX_DIR) && lilypond-book --output=out --loglevel=ERROR --pdf guitar/$*.lytex
+	cd $(LYTEX_DIR)/out && xelatex $*
+	mkdir -p $(OUT_DIR)/guitar
+	cp $(LYTEX_DIR)/out/$*.pdf $(OUT_DIR)/guitar/$*.pdf
 
 $(OUT_DIR)/mandolin/%: $(LYTEX_DIR)/mandolin/%.lytex
 	cd $(LYTEX_DIR) && lilypond-book --output=out --loglevel=ERROR --pdf mandolin/$*.lytex

@@ -1,12 +1,6 @@
-
-common =  {
-  \time 6/4
-  \clef treble
-  \key d \major
-}
-
 melody = \relative a' {
-  \common
+  \time 6/4
+  \key d \major
 
   \repeat volta 2 {
     fis8 a g b a16 b cis d e4. d8 cis a
