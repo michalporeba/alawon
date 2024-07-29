@@ -45,6 +45,8 @@ draft_date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     \round_bracelet %6/8
     \tirdeunaw %4/4
 
+    % done to here
+
     \pageBreak
     \beau_nash
     \dyfatty_sheppans

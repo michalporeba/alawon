@@ -1,13 +1,3 @@
-\documentclass[a5paper]{book}
-\usepackage{blindtext} % showframe to better see layout
-\usepackage[landscape]{geometry}
-\usepackage{fontspec}
-\usepackage{tikz}
-
-\geometry{margin=0.5cm}
-
-\begin{document}
-
 \setmainfont{Truetypewriter PolyglOTT}
 
 \begin{titlepage}
@@ -62,36 +52,3 @@
 
   \end{tikzpicture}
 \end{titlepage}
-
-{% include "pages/imprint.tex" %}
-
-\newpage
-
-{% for tune in tunes %}
-
-  \newpage
-
-  \setmainfont{Indie Flower}
-  \begin{minipage}[b]{0.7\textwidth}
-    \hspace*{-0.5cm}
-    \Huge
-    \raisebox{0pt}[1cm][0.2cm]{\noindent {{tune.title}} }
-  \end{minipage}%
-  \hfill%
-  \begin{minipage}[b]{0.3\textwidth}
-    \raggedleft
-    \raisebox{0pt}[0.5cm][0pt]{ {{tune.composer}} }
-    \hspace{1.1cm}
-  \end{minipage}
-  
-
-  \begin{lilypond}[staffsize=26]
-    \include "../paper.ly"
-    \include "../layout.ly"
-    \include "../helpers.ly"
-    \include "{{tune.id}}.ly"
-    {% block content %}{% endblock %}
-  \end{lilypond}
-
-{% endfor %}
-\end{document}

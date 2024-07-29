@@ -52,8 +52,69 @@
     "signature": "4/4"
   }
 }, {
-  "id": "swansea_hornpipe",
-  "title": "Swansea Hornpipe",
+  "id": "swansea_races",
+  "title": "Swansea Races",
+  "recording": {
+    "date": "2023-06-17",
+    "performer": "Ceri Rhys Matthews",
+    "location": "Elysium, Swansea"
+  },
+  "rhythm": {
+    "signature": "4/4",
+    "name": "reel"
+  }
+}, {
+  "id": "cwm_felin",
+  "title": "Cwm Felin",
+  "recording": {
+    "date": "2022-10-01",
+    "performer": "Ceri Rhys Matthews",
+    "location": "Elysium, Swansea"
+  },
+  "rhythm": {
+    "name": "reel",
+    "signature": "4/4"
+  }
+}, {
+  "id": "tom_lloyd",
+  "title": "Tomos Lloyd o Dreforus",
+  "recording": {
+    "date": "2022-10-01",
+    "performer": "Ceri Rhys Matthews",
+    "location": "Elysium, Swansea"
+  },
+  "rhythm": {
+    "name": "reel",
+    "signature": "4/4"
+  }
+}, {
+  "id": "tirdeunaw",
+  "title": "Tirdeunaw",
+  "recording": {
+    "date": "2023-02-25",
+    "performer": "Ceri Rhys Matthews",
+    "location": "Elysium, Swansea"
+  },
+  "rhythm": {
+    "name": "reel",
+    "signature": "4/4"
+  }
+}, {
+  "id": "nantypal",
+  "title": "Nant-y-Pâl",
+  "recording": {
+    "date": "2022-10-15",
+    "performer": "Ceri Rhys Matthews",
+    "location": "Elysium, Swansea"
+  },
+  "notes": "",
+  "rhythmn": {
+    "name": "minuet",
+    "signature": "6/4"
+  }
+}, {
+  "id": "valparaiso",
+  "title": "Valparaiso",
   "recording": {
     "date": "2022-09-19",
     "performer": "Ceri Rhys Matthews",
@@ -61,8 +122,43 @@
   },
   "notes": "",
   "rhythmn": {
-    "name": "hornpipe",
-    "signature": "4/4"
+    "signature": "6/8"
+  }
+}, {
+  "id": "tom_rosser",
+  "title": "Tom Rosser",
+  "recording": {
+    "date": "2022-09-17",
+    "performer": "Ceri Rhys Matthews",
+    "location": "Elysium, Swansea"
+  },
+  "notes": "",
+  "rhythmn": {
+    "signature": "6/8"
+  }
+}, {
+  "id": "round_bracelet",
+  "title": "Round Bracelet (under the starry coat of dawn)",
+  "recording": {
+    "date": "2023-11-04",
+    "performer": "Ceri Rhys Matthews",
+    "location": "Elysium, Swansea"
+  },
+  "notes": "Ceri added the second part of the title, ''because it needed adding''",
+  "rhythmn": {
+    "signature": "6/8"
+  }
+}, {
+  "id": "diwetydd",
+  "title": "Ar Diwetydd Teg o Ebrill",
+  "recording": {
+    "date": "2022-10-15",
+    "performer": "Ceri Rhys Matthews",
+    "location": "Elysium, Swansea"
+  },
+  "notes": "",
+  "rhythmn": {
+    "signature": "3/4"
   }
 }, {
   "id": "abraham_ace",
@@ -85,15 +181,17 @@
     "location": "Tremarchog"
   }
 }, {
-  "id": "cwm_felin",
-  "title": "Cwm Felin",
+  "id": "tom_rosser_o_bencader",
+  "title": "Tom Rosser o Bencader",
   "recording": {
-    "date": "2022-10-01",
+    "date": "2022-09-17",
     "performer": "Ceri Rhys Matthews",
     "location": "Elysium, Swansea"
   },
-  "rhythm": {
-    "name": "reel"
+  "notes": "",
+  "rhythmn": {
+    "name": "other",
+    "signature": "6/8"
   }
 }
 ]
