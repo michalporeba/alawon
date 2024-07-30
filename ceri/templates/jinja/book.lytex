@@ -3,6 +3,7 @@
 \usepackage[landscape]{geometry}
 \usepackage{fontspec}
 \usepackage{tikz}
+\usepackage{multicol}
 
 \geometry{margin=0.5cm}
 
