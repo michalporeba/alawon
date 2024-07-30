@@ -32,11 +32,11 @@ def save(renders, path_template):
 
 
 def get_tunes():
-  def filter(id):
-    return len(sys.argv) == 1 or id in sys.argv
+  def filter(tune):
+    return (len(sys.argv) == 1 or tune.get('id') in sys.argv) and tune.get('hidden', "false") != "true"
 
   tunes = [
-    tune for tune in json.load(open('../data.json')) if filter(tune.get('id'))
+    tune for tune in json.load(open('../data.json')) if filter(tune)
   ]
 
   for tune in tunes:
