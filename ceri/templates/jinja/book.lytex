@@ -66,33 +66,37 @@
 
 {% include "pages/imprint.tex" %}
 
+{% for section in sections %}
 \newpage
+    \section{ {{section.name}} }
 
-{% for tune in tunes %}
+    {% for tune in section.tunes %}
 
-  \newpage
+    \newpage
 
-  \setmainfont{Indie Flower}
-  \begin{minipage}[b]{0.7\textwidth}
-    \hspace*{-0.5cm}
-    \Huge
-    \raisebox{0pt}[1cm][0.2cm]{\noindent {{tune.title}} }
-  \end{minipage}%
-  \hfill%
-  \begin{minipage}[b]{0.3\textwidth}
-    \raggedleft
-    \raisebox{0pt}[0.5cm][0pt]{ {{tune.composer}} }
-    \hspace{1.1cm}
-  \end{minipage}
-  
+    \setmainfont{Indie Flower}
+    \begin{minipage}[b]{0.7\textwidth}
+      \hspace*{-0.5cm}
+      \Huge
+      \raisebox{0pt}[1cm][0.2cm]{\noindent {{tune.title}} }
+    \end{minipage}%
+    \hfill%
+    \begin{minipage}[b]{0.3\textwidth}
+      \raggedleft
+      \raisebox{0pt}[0.5cm][0pt]{ {{tune.composer}} }
+      \hspace{1.1cm}
+    \end{minipage}
+    
 
-  \begin{lilypond}[staffsize=26]
-    \include "../paper.ly"
-    \include "../layout.ly"
-    \include "../helpers.ly"
-    \include "{{tune.id}}.ly"
-    {% block content %}{% endblock %}
-  \end{lilypond}
+    \begin{lilypond}[staffsize=26]
+      \include "../paper.ly"
+      \include "../layout.ly"
+      \include "../helpers.ly"
+      \include "{{tune.id}}.ly"
+      {% block content %}{% endblock %}
+    \end{lilypond}
+
+  {% endfor %}
 
 {% endfor %}
 \end{document}

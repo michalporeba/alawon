@@ -8,7 +8,7 @@
     "location": "Elysium, Swansea"
   },
   "notes": "",
-  "rhythmn": {
+  "rhythm": {
     "name": "march",
     "signature": "4/4"
   }
@@ -21,7 +21,7 @@
     "location": "Elysium, Swansea"
   },
   "notes": "",
-  "rhythmn": {
+  "rhythm": {
     "name": "march",
     "signature": "4/4"
   }
@@ -34,7 +34,7 @@
     "location": "Elysium, Swansea"
   },
   "notes": "",
-  "rhythmn": {
+  "rhythm": {
     "name": "march",
     "signature": "4/4"
   }
@@ -47,7 +47,7 @@
     "location": "Elysium, Swansea"
   },
   "notes": "",
-  "rhythmn": {
+  "rhythm": {
     "name": "hornpipe",
     "signature": "4/4"
   }
@@ -108,7 +108,7 @@
     "location": "Elysium, Swansea"
   },
   "notes": "",
-  "rhythmn": {
+  "rhythm": {
     "name": "minuet",
     "signature": "6/4"
   }
@@ -121,7 +121,8 @@
     "location": "Elysium, Swansea"
   },
   "notes": "",
-  "rhythmn": {
+  "rhythm": {
+    "name": "jig",
     "signature": "6/8"
   }
 }, {
@@ -133,7 +134,8 @@
     "location": "Elysium, Swansea"
   },
   "notes": "",
-  "rhythmn": {
+  "rhythm": {
+    "name": "jig",
     "signature": "6/8"
   }
 }, {
@@ -146,6 +148,7 @@
   },
   "notes": "Ceri added the second part of the title, ''because it needed adding''",
   "rhythmn": {
+    "name": "jig",
     "signature": "6/8"
   }
 }, {
@@ -158,6 +161,7 @@
   },
   "notes": "",
   "rhythmn": {
+    "name": "minuet",
     "signature": "3/4"
   }
 }, {
@@ -191,7 +195,7 @@
   },
   "notes": "",
   "rhythmn": {
-    "name": "other",
+    "name": "jig",
     "signature": "6/8"
   }
 }
