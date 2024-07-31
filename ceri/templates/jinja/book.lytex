@@ -114,6 +114,8 @@
       {% include "pages/minuets.tex" %}
     {% elif section.name == "jig" %}
       {% include "pages/jigs.tex" %}
+    {% elif section.name == "slipjig" %}
+      {% include "pages/slipjigs.tex" %}
     {% elif section.name == "reel" %}
       {% include "pages/reels.tex" %}
     {% elif section.name == "other" %}

@@ -239,9 +239,22 @@
     "location": "Elysium, Swansea"
   },
   "notes": "Ceri added the second part of the title, ''because it needed adding''",
-  "rhythmn": {
+  "rhythm": {
     "name": "jig",
     "signature": "6/8"
+  }
+}, {
+  "id": "maizey_dance",
+  "title": "The Spirit of the Maizey Dance",
+  "shorttitle": "Maizey Dance",
+  "recording": {
+    "date": "spring, 2023",
+    "performer": "Ceri Rhys Matthews",
+    "location": "Elysium, Swansea"
+  },
+  "rhythm": {
+    "name": "slipjig",
+    "signature": "9/8"
   }
 }, {
   "id": "diwetydd",
@@ -252,7 +265,7 @@
     "location": "Elysium, Swansea"
   },
   "notes": "",
-  "rhythmn": {
+  "rhythm": {
     "name": "minuet",
     "signature": "3/4"
   }
@@ -265,7 +278,7 @@
     "location": "Elysium, Swansea"
   },
   "notes": "A Gower melody, probably used to be a song",
-  "rhythmn": {
+  "rhythm": {
     "signature": "12/8"
   }
 }, {
@@ -286,7 +299,7 @@
     "location": "Elysium, Swansea"
   },
   "notes": "",
-  "rhythmn": {
+  "rhythm": {
     "name": "jig",
     "signature": "6/8"
   }
