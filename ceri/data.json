@@ -13,6 +13,59 @@
     "signature": "4/4"
   }
 }, {
+  "id": "beau_nash",
+  "title": "Beau Nash",
+  "recording": {
+    "date": "2022-11-12",
+    "performer": "Ceri Rhys Matthews",
+    "location": "Elysium, Swansea"
+  },
+  "notes": "",
+  "rhythm": {
+    "name": "march",
+    "signature": "2/4"
+  }
+}, {
+  "id": "dyfatty_sheppans",
+  "title": "Dyfatty Sheppans",
+  "form": "A A' B A' B A",
+  "recording": {
+    "date": "2022-11-12",
+    "performer": "Ceri Rhys Matthews",
+    "location": "Elysium, Swansea"
+  },
+  "notes": "",
+  "rhythm": {
+    "name": "march",
+    "signature": "2/4"
+  }
+}, {
+  "id": "ryt_y_nant",
+  "title": "Ryt y Nant Wrth Gwt y Tŷ",
+  "recording": {
+    "date": "2022-10-01",
+    "performer": "Ceri Rhys Matthews",
+    "location": "Elysium, Swansea"
+  },
+  "notes": "",
+  "rhythm": {
+    "name": "march",
+    "signature": "2/4"
+  }
+}, {
+  "id": "ryt_y_nant_jig",
+  "title": "Jig Ryt y Nant",
+  "recording": {
+    "date": "2022-10-01",
+    "performer": "Ceri Rhys Matthews",
+    "location": "Elysium, Swansea"
+  },
+  "notes": "",
+  "rhythm": {
+    "name": "jig",
+    "signature": "6/8"
+  }
+}, {
   "id": "penderi_plate",
   "title": "Penderi Plate",
   "recording": {
@@ -41,6 +94,19 @@
 }, {
   "id": "mumbles_hornpipe",
   "title": "Mumbles Hornpipe",
+  "recording": {
+    "date": "2022-09-19",
+    "performer": "Ceri Rhys Matthews",
+    "location": "Elysium, Swansea"
+  },
+  "notes": "",
+  "rhythm": {
+    "name": "hornpipe",
+    "signature": "4/4"
+  }
+}, {
+  "id": "swansea_hornpipe",
+  "title": "Swansea Hornpipe",
   "recording": {
     "date": "2022-09-19",
     "performer": "Ceri Rhys Matthews",

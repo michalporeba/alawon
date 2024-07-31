@@ -137,9 +137,17 @@
     \end{minipage}%
     \hfill%
     \begin{minipage}[b]{0.3\textwidth}
-      \raggedleft
-      \raisebox{0pt}[0.5cm][0pt]{ {{tune.composer}} }
-      \hspace{1.1cm}
+      {% if tune.composer %}
+        \raggedleft
+        \raisebox{0pt}[0.5cm][0pt]{ {{tune.composer}} }
+        \hspace{1.1cm}
+      {% endif %}
+      {% if tune.form %}
+        \raggedleft
+        \raisebox{0pt}[0.5cm][0pt]{ form: {{tune.form}} }
+        \hspace{1.1cm}
+      {% endif %}
+
     \end{minipage}
 
     \begin{lilypond}[staffsize=26]

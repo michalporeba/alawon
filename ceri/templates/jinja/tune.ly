@@ -17,6 +17,7 @@ mandolin = \score {
   \header {
     title = "{{title}}"
     {% if composer %}composer = "{{composer}}"{% endif %}
+    {% if composer %}form = "{{form}}"{% endif %}
   }
   \new TabStaff {
     \tabFullNotation
