@@ -14,6 +14,7 @@ def define_sections():
     TunesSection('march'),
     TunesSection('hornpipe'),
     TunesSection('reel'),
+    TunesSection('minuet'),
     TunesSection('jig'),
     TunesSection('other')
   ]
@@ -77,10 +78,9 @@ def get_tunes():
 
   return tunes
 
-  
 def main():
   tunes = get_tunes()
-
+  print(f'INFO: Processing {len(tunes)} melodies.')
   save(render_each(tunes, 'tune.ly'), 'lytex/{id}.ly')
   save(render_each(tunes, 'tune-in-dots.lytex'), 'lytex/dots/{id}.lytex')
   save(render_each(tunes, 'tune-in-guitar.lytex'), 'lytex/guitar/{id}.lytex')
@@ -90,6 +90,9 @@ def main():
 
     tunes = sort_tunes(tunes)
     sections = group_tunes(tunes).values()
+
+    for section in sections:
+      print(f'INFO: There are {len(section.tunes)} {section.name}s')
 
     save(render_all(sections, 'book-in-dots.lytex'), 'lytex/book.dots.lytex')
     save(render_all(sections, 'book-in-guitar.lytex'), 'lytex/book.guitar.lytex')

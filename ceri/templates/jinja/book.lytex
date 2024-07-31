@@ -110,8 +110,18 @@
       {% include "pages/marches.tex" %}
     {% elif section.name == "hornpipe" %}
       {% include "pages/hornpipes.tex" %}
+    {% elif section.name == "minuet" %}
+      {% include "pages/minuets.tex" %}
+    {% elif section.name == "jig" %}
+      {% include "pages/jigs.tex" %}
+    {% elif section.name == "reel" %}
+      {% include "pages/reels.tex" %}
+    {% elif section.name == "other" %}
+      {% if section.tunes|length > 0 %}
+        {% include "pages/others.tex" %}
+      {% endif %}
     {% else %}
-      \section*{ {{section.name }}}
+      \section*{ Missing section template for {{section.name }} }
     {% endif %}
 \end{minipage}
 
