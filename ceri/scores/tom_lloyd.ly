@@ -2,7 +2,6 @@
 melody = \relative a' {
   \time 2/2
   \key e \minor
-  \swing_ceri
 
   \repeat volta 2 {
     a4. g8 e4 a--

@@ -1,7 +1,6 @@
 melody = \relative d' {
   \time 2/2
   \key d \major
-  \swing_ceri
 
   \repeat volta 2 {
     fis4 fis g fis8 g

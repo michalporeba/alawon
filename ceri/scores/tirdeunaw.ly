@@ -1,7 +1,6 @@
 melody = \relative d'' {
   \time 4/4
   \key d \major
-  \hornpipe_tempo
 
   \repeat volta 2 {
     a8 b d e d e fis d

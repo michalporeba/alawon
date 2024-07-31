@@ -154,6 +154,18 @@
     "signature": "4/4"
   }
 }, {
+  "id": "merch_y_ffeiriad",
+  "title": "Merch y Ffeirad",
+  "recording": {
+    "date": "2023-06-17",
+    "performer": "Ceri Rhys Matthews",
+    "location": "Elysium, Swansea"
+  },
+  "rhythm": {
+    "name": "reel",
+    "signature": "4/4"
+  }
+}, {
   "id": "tirdeunaw",
   "title": "Tirdeunaw",
   "recording": {
@@ -200,6 +212,19 @@
     "location": "Elysium, Swansea"
   },
   "notes": "",
+  "rhythm": {
+    "name": "jig",
+    "signature": "6/8"
+  }
+}, {
+  "id": "mysydd",
+  "title": "Y Mysydd",
+  "recording": {
+    "date": "2023-02-25",
+    "performer": "Ceri Rhys Matthews",
+    "location": "Elysium, Swansea"
+  },
+  "notes": "Version of Calon Lan. Y Mysydd is anglicaised name of Y Maesydd, the road in Swansea. Title by Ceri to distinguish it from Tirdeunaw",
   "rhythm": {
     "name": "jig",
     "signature": "6/8"
