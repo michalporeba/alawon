@@ -12,6 +12,7 @@
 \begin{document}
 
 \setmainfont{Truetypewriter PolyglOTT}
+\setsansfont{Indie Flower}
 
 \begin{titlepage}
   \begin{tikzpicture}[remember picture, overlay]
@@ -88,16 +89,27 @@
 
 \noindent
 \begin{minipage}[b][\textheight]{0.28\textwidth}
-    
     {% for tune in section.tunes %}
       \vspace*{5mm}
-      \noindent \large{ {{tune.title }} }
+
+      \noindent
+      \sffamily
+      \large
+        {% if tune.shorttitle %}
+          {{tune.shorttitle }}
+        {% else %}
+          {{tune.title }}
+        {% endif %}
+  
     {% endfor %}
+    \vspace*{1mm}
 \end{minipage}%
 \hfill
 \begin{minipage}[t][\textheight]{0.7\textwidth}
     {% if section.name == "march" %}
       {% include "pages/marches.tex" %}
+    {% elif section.name == "hornpipe" %}
+      {% include "pages/hornpipes.tex" %}
     {% else %}
       \section*{ {{section.name }}}
     {% endif %}
