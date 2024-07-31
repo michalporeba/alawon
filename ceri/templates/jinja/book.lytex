@@ -4,6 +4,8 @@
 \usepackage{fontspec}
 \usepackage{tikz}
 \usepackage{multicol}
+\usepackage{tcolorbox}
+\usepackage{eso-pic}
 
 \geometry{margin=0.5cm}
 
@@ -68,7 +70,38 @@
 
 {% for section in sections %}
 \newpage
-    \section{ {{section.name}} }
+
+\setmainfont{Truetypewriter PolyglOTT}
+
+\AddToShipoutPictureBG*{
+  \AtPageLowerLeft{ % Starts from the bottom left corner of the page
+      \color{gray!5!white} % Set the color of the rectangle
+      \hspace*{-5mm}
+      \rule{0.29\paperwidth}{\paperheight} % Width and height of the rectangle
+      \color{gray!20!white} % Set the color of the rectangle
+      \hspace*{-5mm}
+      \rule{3mm}{\paperheight} % Width and height of the rectangle
+  }
+}
+
+\setlength{\columnsep}{0.5cm}
+
+\noindent
+\begin{minipage}[b][\textheight]{0.28\textwidth}
+    
+    {% for tune in section.tunes %}
+      \vspace*{5mm}
+      \noindent \large{ {{tune.title }} }
+    {% endfor %}
+\end{minipage}%
+\hfill
+\begin{minipage}[t][\textheight]{0.7\textwidth}
+    {% if section.name == "march" %}
+      {% include "pages/marches.tex" %}
+    {% else %}
+      \section*{ {{section.name }}}
+    {% endif %}
+\end{minipage}
 
     {% for tune in section.tunes %}
 
@@ -86,7 +119,6 @@
       \raisebox{0pt}[0.5cm][0pt]{ {{tune.composer}} }
       \hspace{1.1cm}
     \end{minipage}
-    
 
     \begin{lilypond}[staffsize=26]
       \include "../paper.ly"
