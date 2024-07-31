@@ -26,6 +26,45 @@
     "signature": "2/4"
   }
 }, {
+  "id": "miss_talbots",
+  "title": "Miss Talbot's Reel",
+  "recording": {
+    "date": "2023-08-12",
+    "performer": "Ceri Rhys Matthews",
+    "location": "Elysium, Swansea"
+  },
+  "notes": "",
+  "rhythm": {
+    "name": "reel",
+    "signature": "2/4"
+  }
+}, {
+  "id": "tower_colliery",
+  "title": "Tower Colliery",
+  "composer": "Ceri Rhys Matthews",
+  "recording": {
+    "date": "",
+    "performer": "Ceri Rhys Matthews",
+    "location": "Elysium, Swansea"
+  },
+  "notes": "",
+  "rhythm": {
+    "name": "reel",
+    "signature": "2/4"
+  }
+}, {
+  "id": "waunlwyd",
+  "title": "Y Waunlwyd",
+  "recording": {
+    "date": "2023-08-12",
+    "performer": "Ceri Rhys Matthews",
+    "location": "Elysium, Swansea"
+  },
+  "rhythm": {
+    "name": "march",
+    "signature": "4/4"
+  }
+}, {
   "id": "dyfatty_sheppans",
   "title": "Dyfatty Sheppans",
   "form": "A A' B A' B A",
@@ -302,6 +341,70 @@
   "rhythm": {
     "name": "jig",
     "signature": "6/8"
+  }
+}, {
+  "id": "i_lawr_ar_brenin",
+  "title": "I Lawr â'r Brenin",
+  "recording": {
+    "date": "spring, 2023",
+    "performer": "Ceri Rhys Matthews",
+    "location": "Elysium, Swansea"
+  },
+  "notes": "",
+  "rhythm": {
+    "name": "other",
+    "signature": "mixed"
+  }
+}, {
+  "id": "laleston_whim",
+  "title": "Laleston Whim / Miss Bennett's",
+  "shorttitle": "Laleston Whim",
+  "recording": {
+    "date": "2023-08-12",
+    "performer": "Ceri Rhys Matthews",
+    "location": "Elysium, Swansea"
+  },
+  "notes": "",
+  "rhythm": {
+    "name": "other",
+    "signature": "4/4"
+  }
+}, {
+  "id": "glowty_pengwern",
+  "title": "Glowty Pengwern",
+  "recording": {
+    "date": "2022-10-15",
+    "performer": "Ceri Rhys Matthews",
+    "location": "Elysium, Swansea"
+  },
+  "notes": "Minuet? Melody related to hymn by Tomos Williams from Ynys Meudwy (called Ebenezer?) that got popular as Tom y Botl and banned from chapels.",
+  "rhythm": {
+    "name": "other",
+    "signature": "6/8"
+  }
+}, {
+  "id": "cape_horner",
+  "title": "The Cape Horner",
+  "recording": {
+    "date": "2023-10-07",
+    "performer": "Ceri Rhys Matthews",
+    "location": "Elysium, Swansea"
+  },
+  "rhythm": {
+    "name": "other",
+    "signature": "4/4"
+  }
+}, {
+  "id": "will_griffiths",
+  "title": "Will Griffiths",
+  "recording": {
+    "date": "2023-02-11",
+    "performer": "Ceri Rhys Matthews",
+    "location": "Elysium, Swansea"
+  },
+  "rhythm": {
+    "name": "other",
+    "signature": "2/2"
   }
 }
 ]
