@@ -17,6 +17,7 @@ def define_sections():
     TunesSection('minuet'),
     TunesSection('jig'),
     TunesSection('slipjig'),
+    TunesSection('slide'),
     TunesSection('other')
   ]
 

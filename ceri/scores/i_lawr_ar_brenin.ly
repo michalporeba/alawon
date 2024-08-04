@@ -19,5 +19,4 @@ melody = \relative g' {
     e4 b8 c4 b8 a g a
     b4 a8 g4 fis 8 e4.
   }
-  \bar"|."
 }

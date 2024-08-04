@@ -318,6 +318,60 @@
   },
   "notes": "A Gower melody, probably used to be a song",
   "rhythm": {
+    "name": "slide",
+    "signature": "12/8"
+  }
+}, {
+  "id": "qoquimbo",
+  "title": "Bound for old Qoquimbo",
+  "recording": {
+    "date": "2022-10-29",
+    "performer": "Ceri Rhys Matthews",
+    "location": "Elysium, Swansea"
+  },
+  "notes": "A Gower maritime melody recorded with Abram Ace and Gleaning the Zongals",
+  "rhythm": {
+    "name": "slide",
+    "signature": "12/8"
+  }
+}, {
+  "id": "trip_to_fortes",
+  "title": "Trip to Fortes",
+  "composer": "Ceri Rhys Matthews",
+  "recording": {
+    "date": "2023-10-21",
+    "performer": "Ceri Rhys Matthews",
+    "location": "Elysium, Swansea"
+  },
+  "notes": "Bus 36 was one in which Ceri and his Grandmother would go on trip to Forte's, ice cream parlour by Limeslide Bay. It was composed by Ceri for his grandmother who would take him there for icecrea, and who spoke in a very Swansea melodic",
+  "rhythm": {
+    "name": "slide",
+    "signature": "12/8"
+  }
+}, {
+  "id": "zongals",
+  "title": "Gleaning the Zongals",
+  "recording": {
+    "date": "2022-10-29",
+    "performer": "Ceri Rhys Matthews",
+    "location": "Elysium, Swansea"
+  },
+  "notes": "Zongals is a Gower word which relates to bits left in the field after the crop was taken",
+  "rhythm": {
+    "name": "slide",
+    "signature": "12/8"
+  }
+}, {
+  "id": "willie_taylor",
+  "title": "Willie Taylor",
+  "recording": {
+    "date": "2023-10-21",
+    "performer": "Ceri Rhys Matthews",
+    "location": "Elysium, Swansea"
+  },
+  "notes": "Based on Willie Taylor sea shanty as sang by Jon Toft",
+  "rhythm": {
+    "name": "slide",
     "signature": "12/8"
   }
 }, {

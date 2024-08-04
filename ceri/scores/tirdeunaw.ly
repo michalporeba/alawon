@@ -1,5 +1,5 @@
 melody = \relative d'' {
-  \time 4/4
+  \time 2/2
   \key d \major
 
   \repeat volta 2 {
