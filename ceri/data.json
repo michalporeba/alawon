@@ -217,6 +217,18 @@
     "signature": "4/4"
   }
 }, {
+  "id": "mynydd_drumau",
+  "title": "Mynydd Drumau",
+  "recording": {
+    "date": "",
+    "performer": "Ceri Rhys Matthews",
+    "location": "Elysium, Swansea"
+  },
+  "rhythm": {
+    "name": "reel",
+    "signature": "2/2"
+  }
+}, {
   "id": "nantypal",
   "title": "Nant-y-Pâl",
   "recording": {
@@ -278,6 +290,32 @@
     "location": "Elysium, Swansea"
   },
   "notes": "Ceri added the second part of the title, ''because it needed adding''",
+  "rhythm": {
+    "name": "jig",
+    "signature": "6/8"
+  }
+}, {
+  "id": "mynydd_gelliwastad",
+  "title": "Mynydd Gelliwastad",
+  "recording": {
+    "date": "2023-05-04",
+    "performer": "Ceri Rhys Matthews",
+    "location": "Elysium, Swansea"
+  },
+  "notes": "from the perspective of Ynys Forgan (where the capital or Gower used to be) Mynydd Gelliwastad is where the sun sets, and Mynydd Drumma is where it rises.",
+  "rhythm": {
+    "name": "jig",
+    "signature": "6/8"
+  }
+}, {
+  "id": "llyn_llyw",
+  "title": "Llyn Llyw",
+  "recording": {
+    "date": "2023-05-04",
+    "performer": "Ceri Rhys Matthews",
+    "location": "Elysium, Swansea"
+  },
+  "notes": "",
   "rhythm": {
     "name": "jig",
     "signature": "6/8"
