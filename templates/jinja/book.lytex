@@ -20,7 +20,7 @@
       \includegraphics[
         width=\paperwidth,
         height=\paperheight
-      ]{../../../assets/cover.jpg}
+      ]{../../assets/cover.jpg}
     };
     \node[
       fill=black,

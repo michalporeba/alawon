@@ -97,7 +97,7 @@ def main():
   save(render_each(tunes, 'tune-in-guitar.lytex'), output_location+'guitar/{id}.lytex')
   save(render_each(tunes, 'tune-in-mandolin.lytex'), output_location+'mandolin/{id}.lytex')
 
-  if len(tunes) > 1:
+  if len(sys.argv) == 2:
 
     tunes = sort_tunes(tunes)
     sections = group_tunes(tunes).values()
