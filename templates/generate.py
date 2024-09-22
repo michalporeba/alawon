@@ -54,7 +54,7 @@ def render_all(sections, template_name):
 
 
 def render_each(tunes, template_name):
-  environment = Environment(loader=FileSystemLoader('jinja'))
+  environment = Environment(loader=FileSystemLoader('../templates/jinja'))
   template = environment.get_template(template_name)
 
   for tune in tunes:
@@ -76,7 +76,7 @@ def save(renders, path_template):
 def get_tunes():
   def filter(tune):
     # first argument is the location of the files
-    return (len(sys.argv) == 2 or tune.get('id') in sys.argv) and tune.get('hidden', "false") != "true"
+    return (len(sys.argv) == 2 or tune.get('id') in sys.argv[2:]) and tune.get('hidden', "false") != "true"
 
   tunes = [
     tune for tune in json.load(open(f'../{location}/data.json')) if filter(tune)
@@ -91,7 +91,6 @@ def get_tunes():
 def main():
   output_location = f'../{location}/templates/'
   tunes = get_tunes()
-  print(tunes)
   print(f'INFO: Processing {len(tunes)} melodies.')
   save(render_each(tunes, 'tune.ly'), output_location+'{id}.ly')
   save(render_each(tunes, 'tune-in-dots.lytex'), output_location+'dots/{id}.lytex')

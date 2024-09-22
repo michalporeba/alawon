@@ -6,7 +6,6 @@
 \geometry{margin=0.5cm}
 
 \begin{document}
-  
   \setmainfont{Indie Flower}
   \begin{minipage}[b]{0.7\textwidth}
     \hspace*{-0.5cm}
@@ -21,12 +20,11 @@
   \end{minipage}
 
   \begin{lilypond}[staffsize=26]
-    \include "../paper.ly"
-    \include "../layout.ly"
-    \include "../helpers.ly"
+    \include "../../templates/lilypond/paper.ly"
+    \include "../../templates/lilypond/layout.ly"
+    \include "../../templates/lilypond/helpers.ly"
     \include "{{id}}.ly"
     {% block content %}
     {% endblock %}
   \end{lilypond}
-
 \end{document}
