@@ -1,0 +1,3 @@
+{% extends "tune.lytex" %}
+
+{% block content %}\mandolin{% endblock %}

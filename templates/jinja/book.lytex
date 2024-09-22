@@ -1,0 +1,168 @@
+\documentclass[a5paper]{book}
+\usepackage{blindtext} % showframe to better see layout
+\usepackage[landscape]{geometry}
+\usepackage{fontspec}
+\usepackage{tikz}
+\usepackage{multicol}
+\usepackage{tcolorbox}
+\usepackage{eso-pic}
+
+\geometry{margin=0.5cm}
+
+\begin{document}
+
+\setmainfont{Truetypewriter PolyglOTT}
+\setsansfont{Indie Flower}
+
+\begin{titlepage}
+  \begin{tikzpicture}[remember picture, overlay]
+    \node[anchor=center, inner sep=0pt] at (current page.center){
+      \includegraphics[
+        width=\paperwidth,
+        height=\paperheight
+      ]{../../../assets/cover.jpg}
+    };
+    \node[
+      fill=black,
+      text=white,
+      anchor=north east,
+      xshift=20cm, yshift=13.5cm,
+      opacity=0.7, text opacity=1
+    ] at (current page.south west) {
+      \fontsize{24}{48}\selectfont
+      {% block notation %}{% endblock %}
+    };
+
+    \node[
+      fill=white!20,
+      anchor=south east,
+      xshift=13cm, yshift=3cm,
+      opacity=0.7, text opacity=1
+    ] at (current page.south west) {
+      \fontsize{42}{48}\selectfont
+      Making the Marks
+    };
+
+    \node[
+      fill=white!20,
+      anchor=south east,
+      xshift=16cm, yshift=2cm,
+      opacity=0.7, text opacity=1
+    ] at (current page.south west) {
+      \fontsize{17}{24}\selectfont
+      still drawing of a theoretical object
+    };
+
+    \node[
+      fill=black,
+      text=white,
+      anchor=south east,
+      xshift=20cm, yshift=1cm,
+      opacity=0.7, text opacity=1
+    ] at (current page.south west) {
+      \fontsize{17}{24}\selectfont
+      notes from Yscolan with Ceri Rhys Matthews
+    };
+
+  \end{tikzpicture}
+\end{titlepage}
+
+{% include "pages/imprint.tex" %}
+
+{% for section in sections %}
+\newpage
+
+\setmainfont{Truetypewriter PolyglOTT}
+
+\AddToShipoutPictureBG*{
+  \AtPageLowerLeft{ % Starts from the bottom left corner of the page
+      \color{gray!5!white} % Set the color of the rectangle
+      \hspace*{-5mm}
+      \rule{0.29\paperwidth}{\paperheight} % Width and height of the rectangle
+      \color{gray!20!white} % Set the color of the rectangle
+      \hspace*{-5mm}
+      \rule{3mm}{\paperheight} % Width and height of the rectangle
+  }
+}
+
+\setlength{\columnsep}{0.5cm}
+
+\noindent
+\begin{minipage}[b][\textheight]{0.28\textwidth}
+    {% for tune in section.tunes %}
+      \vspace*{5mm}
+
+      \noindent
+      \sffamily
+      \large
+        {% if tune.shorttitle %}
+          {{tune.shorttitle }}
+        {% else %}
+          {{tune.title }}
+        {% endif %}
+  
+    {% endfor %}
+    \vspace*{1mm}
+\end{minipage}%
+\hfill
+\begin{minipage}[t][\textheight]{0.7\textwidth}
+    {% if section.name == "march" %}
+      {% include "pages/marches.tex" %}
+    {% elif section.name == "hornpipe" %}
+      {% include "pages/hornpipes.tex" %}
+    {% elif section.name == "minuet" %}
+      {% include "pages/minuets.tex" %}
+    {% elif section.name == "jig" %}
+      {% include "pages/jigs.tex" %}
+    {% elif section.name == "slipjig" %}
+      {% include "pages/slipjigs.tex" %}
+    {% elif section.name == "slide" %}
+      {% include "pages/slides.tex" %}
+    {% elif section.name == "reel" %}
+      {% include "pages/reels.tex" %}
+    {% elif section.name == "other" %}
+      {% if section.tunes|length > 0 %}
+        {% include "pages/others.tex" %}
+      {% endif %}
+    {% else %}
+      \section*{ Missing section template for {{section.name }} }
+    {% endif %}
+\end{minipage}
+
+    {% for tune in section.tunes %}
+
+    \newpage
+
+    \setmainfont{Indie Flower}
+    \begin{minipage}[b]{0.7\textwidth}
+      \hspace*{-0.5cm}
+      \Huge
+      \raisebox{0pt}[1cm][0.2cm]{\noindent {{tune.title}} }
+    \end{minipage}%
+    \hfill%
+    \begin{minipage}[b]{0.3\textwidth}
+      {% if tune.composer %}
+        \raggedleft
+        \raisebox{0pt}[0.5cm][0pt]{ {{tune.composer}} }
+        \hspace{1.1cm}
+      {% endif %}
+      {% if tune.form %}
+        \raggedleft
+        \raisebox{0pt}[0.5cm][0pt]{ form: {{tune.form}} }
+        \hspace{1.1cm}
+      {% endif %}
+
+    \end{minipage}
+
+    \begin{lilypond}[staffsize=26]
+      \include "../paper.ly"
+      \include "../layout.ly"
+      \include "../helpers.ly"
+      \include "{{tune.id}}.ly"
+      {% block content %}{% endblock %}
+    \end{lilypond}
+
+  {% endfor %}
+
+{% endfor %}
+\end{document}

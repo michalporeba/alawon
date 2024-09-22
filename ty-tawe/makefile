@@ -8,10 +8,10 @@ SOURCES := $(wildcard $(LYTEX_DIR)/*/*.lytex)
 BOOK_SOURCES := $(wildcard $(LYTEX_DIR)/*.lytex)
 
 poetry:
-	cd templates && poetry install --no-root
+	cd ../templates && poetry install --no-root
 
 templates: poetry
-	cd templates && poetry run python generate.py
+	cd ../templates && poetry run python generate.py ty-tawe
 
 prints: individual_prints book_prints
 

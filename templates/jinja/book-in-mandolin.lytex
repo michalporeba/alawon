@@ -1,0 +1,4 @@
+{% extends "book.lytex" %}
+
+{% block notation %}mandolin{% endblock %}
+{% block content %}\mandolin{% endblock %}
