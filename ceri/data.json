@@ -242,6 +242,19 @@
     "signature": "6/4"
   }
 }, {
+  "id": "bryn_y_don",
+  "title": "Bryn y Don",
+  "recording": {
+    "date": "2024-07-13",
+    "performer": "Ceri Rhys Matthews",
+    "location": "Elysium, Swansea"
+  },
+  "notes": "",
+  "rhythm": {
+    "name": "other",
+    "signature": "6/4"
+  }
+}, {
   "id": "valparaiso",
   "title": "Valparaiso",
   "recording": {
@@ -268,8 +281,8 @@
     "signature": "6/8"
   }
 }, {
-  "id": "ysgyfarnog_daran_dinbych",
-  "title": "Ysgyfarnog Daran Dinbych",
+  "id": "ysgyfarnog_daren_y_dimbath",
+  "title": "Ysgyfarnog Daren y Dimbath",
   "recording": {
     "date": "2024-07-20",
     "performer": "Ceri Rhys Matthews",
@@ -283,6 +296,7 @@
 }, {
   "id": "mynnws_yn_nad",
   "title": "Mynnws yn Nâd I Fynnyd y Bâd",
+  "shorttitle": "Mynnws yn Nâd",
   "recording": {
     "date": "2024-07-20",
     "performer": "Ceri Rhys Matthews",
@@ -445,6 +459,22 @@
     "date": "2024-07-20",
     "performer": "Ceri Rhys Matthews",
     "location": "Tremarchog"
+  },
+  "rhythm": {
+    "name": "other",
+    "signature": "6/4"
+  }
+}, {
+  "id": "dawns_hywel",
+  "title": "Dawns Hywel",
+  "recording": {
+    "date": "2024-07-21",
+    "performer": "Ceri Rhys Matthews",
+    "location": "Tremarchog"
+  },
+  "rhythm": {
+    "name": "other",
+    "signature": "6/4"
   }
 }, {
   "hidden": "true",

@@ -1,16 +1,6 @@
-% recorded on 2024-07-21
-% transcription from Ceri Rhys Matthews
-
-dawn_hywel_title = "Dawn Hywel"
-
-dawn_hywel_common =  {
+melody = \relative b' {
   \time 6/4
-  \clef treble
   \key g \major
-}
-
-dawn_hywel_melody = \relative b' {
-  \dawn_hywel_common
 
   b2 g4 b8 g e4 e
   b'8 a g4 b d4. e8 d c
@@ -36,10 +26,3 @@ dawn_hywel_melody = \relative b' {
 
   \bar"|."
 }
-
-dawn_hywel = \score {
-  \header {
-    title = \dawn_hywel_title
-  }
-  \dawn_hywel_melody
-} %score
