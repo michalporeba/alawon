@@ -1,6 +1,5 @@
 .PHONY: all poetry templates individual_prints book_prints
 
-
 SRC_DIR := scores
 LYTEX_DIR := templates
 OUT_DIR := prints
@@ -24,7 +23,6 @@ individual_prints: \
 	$(SOURCES:$(LYTEX_DIR)/mandolin/%.lytex=$(OUT_DIR)/mandolin/%)
 
 $(OUT_DIR)/dots/%: $(LYTEX_DIR)/dots/%.lytex
-	@echo "hello"
 	cd $(LYTEX_DIR) && lilypond-book --output=out --loglevel=ERROR --pdf dots/$*.lytex
 	cd $(LYTEX_DIR)/out && xelatex $*
 	mkdir -p $(OUT_DIR)/dots

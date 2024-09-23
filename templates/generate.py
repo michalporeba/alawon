@@ -50,7 +50,9 @@ def render_all(sections, template_name):
   environment = Environment(loader=FileSystemLoader('jinja'))
   template = environment.get_template(template_name)
 
-  yield { "id": template_name, "output": template.render(sections=sections) }
+  book_options = json.load(open(f'../{location}/book.json'))
+
+  yield { "id": template_name, "output": template.render(sections=sections, **book_options) }
 
 
 def render_each(tunes, template_name):
@@ -79,7 +81,7 @@ def get_tunes():
     return (len(sys.argv) == 2 or tune.get('id') in sys.argv[2:]) and tune.get('hidden', "false") != "true"
 
   tunes = [
-    tune for tune in json.load(open(f'../{location}/data.json')) if filter(tune)
+    tune for tune in json.load(open(f'../{location}/music.json')) if filter(tune)
   ]
 
   for tune in tunes:

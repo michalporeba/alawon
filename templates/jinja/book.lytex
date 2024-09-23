@@ -19,7 +19,8 @@
     \node[anchor=center, inner sep=0pt] at (current page.center){
       \includegraphics[
         width=\paperwidth,
-        height=\paperheight
+        height=\paperheight,
+        trim=0 6cm 12cm 3cm
       ]{../../assets/cover.jpg}
     };
     \node[
@@ -35,22 +36,31 @@
 
     \node[
       fill=white!20,
-      anchor=south east,
-      xshift=13cm, yshift=3cm,
+      anchor=south west,
+      xshift={% if title %}{{title.xshift|default(1)}}{% else %}1{% endif %}cm,
+      yshift={% if title %}{{title.yshift|default(3)}}{% else %}3{% endif %}cm,
       opacity=0.7, text opacity=1
-    ] at (current page.south west) {
+    ] (title-node) at (current page.south west) {
       \fontsize{42}{48}\selectfont
-      Making the Marks
+      {% if title %}
+        {{title.text|default("missing title.text property")}}
+      {% else %}
+        missing title property
+      {% endif %}
     };
 
     \node[
       fill=white!20,
-      anchor=south east,
-      xshift=16cm, yshift=2cm,
+      anchor=south west,
+      yshift=0.5cm,
       opacity=0.7, text opacity=1
-    ] at (current page.south west) {
+    ] (subtitle-node) at (title-node.north west) {
       \fontsize{17}{24}\selectfont
-      still drawing of a theoretical object
+      {% if subtitle %}
+        {{subtitle.text|default("missing subtitle.text property")}}
+      {% else %}
+        missing subtitle property
+      {% endif %}
     };
 
     \node[
@@ -61,7 +71,11 @@
       opacity=0.7, text opacity=1
     ] at (current page.south west) {
       \fontsize{17}{24}\selectfont
-      notes from Yscolan with Ceri Rhys Matthews
+      {% if titlenote %}
+        {{titlenote.text|default("missing titlenote.text property")}}
+      {% else %}
+        missing titlenote property
+      {% endif %}
     };
 
   \end{tikzpicture}
@@ -100,7 +114,6 @@
         {% else %}
           {{tune.title }}
         {% endif %}
-  
     {% endfor %}
     \vspace*{1mm}
 \end{minipage}%
