@@ -24,26 +24,26 @@ individual_prints: \
 
 $(OUT_DIR)/dots/%: $(LYTEX_DIR)/dots/%.lytex
 	cd $(LYTEX_DIR) && lilypond-book --output=out --loglevel=ERROR --pdf dots/$*.lytex
-	cd $(LYTEX_DIR)/out && xelatex $*
+	cd $(LYTEX_DIR)/out && xelatex -interaction=batchmode $*
 	mkdir -p $(OUT_DIR)/dots
 	cp $(LYTEX_DIR)/out/$*.pdf $(OUT_DIR)/dots/$*.pdf
 
 $(OUT_DIR)/guitar/%: $(LYTEX_DIR)/guitar/%.lytex
 	cd $(LYTEX_DIR) && lilypond-book --output=out --loglevel=ERROR --pdf guitar/$*.lytex
-	cd $(LYTEX_DIR)/out && xelatex $*
+	cd $(LYTEX_DIR)/out && xelatex -interaction=batchmode $*
 	mkdir -p $(OUT_DIR)/guitar
 	cp $(LYTEX_DIR)/out/$*.pdf $(OUT_DIR)/guitar/$*.pdf
 
 $(OUT_DIR)/mandolin/%: $(LYTEX_DIR)/mandolin/%.lytex
 	cd $(LYTEX_DIR) && lilypond-book --output=out --loglevel=ERROR --pdf mandolin/$*.lytex
-	cd $(LYTEX_DIR)/out && xelatex $*
+	cd $(LYTEX_DIR)/out && xelatex -interaction=batchmode $*
 	mkdir -p $(OUT_DIR)/mandolin
 	cp $(LYTEX_DIR)/out/$*.pdf $(OUT_DIR)/mandolin/$*.pdf
 
 $(OUT_DIR)/book.%:
 	@echo "generic"
 	cd $(LYTEX_DIR) && lilypond-book --output=out --loglevel=ERROR --pdf book.$*.lytex
-	cd $(LYTEX_DIR)/out && xelatex book.$*
+	cd $(LYTEX_DIR)/out && xelatex -interaction=batchmode book.$*
 	mkdir -p $(OUT_DIR)
 	cp $(LYTEX_DIR)/out/book.$*.pdf $(OUT_DIR)/book.$*.pdf
 
