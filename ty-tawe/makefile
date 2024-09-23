@@ -8,10 +8,10 @@ BOOK_SOURCES := $(wildcard $(LYTEX_DIR)/*.lytex)
 BOOK := ty-tawe
 
 poetry:
-	cd ../templates && poetry install --no-root
+	cd ../_templates && poetry install --no-root
 
 templates: poetry
-	cd ../templates && poetry run python generate.py $(BOOK)
+	cd ../_templates && poetry run python generate.py $(BOOK)
 
 prints: individual_prints book_prints
 
@@ -50,11 +50,11 @@ $(OUT_DIR)/book.%:
 #single part dots
 $(LYTEX_DIR)/dots/%.lytex: poetry $(SRC_DIR)/%.ly
 	@echo "single part dots $*"
-	cd ../templates && poetry run python generate.py $(BOOK) $*
+	cd ../_templates && poetry run python generate.py $(BOOK) $*
 
 #single part mandoline
 $(LYTEX_DIR)/mandolin/%.lytex: poetry $(SRC_DIR)/%.ly
-	cd ../templates && poetry run python generate.py $(BOOK) $*
+	cd ../_templates && poetry run python generate.py $(BOOK) $*
 
 clean:
 	rm -rf $(LYTEX_DIR)

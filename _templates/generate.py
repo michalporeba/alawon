@@ -56,7 +56,7 @@ def render_all(sections, template_name):
 
 
 def render_each(tunes, template_name):
-  environment = Environment(loader=FileSystemLoader('../templates/jinja'))
+  environment = Environment(loader=FileSystemLoader('../_templates/jinja'))
   template = environment.get_template(template_name)
 
   for tune in tunes:
