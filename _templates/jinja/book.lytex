@@ -168,9 +168,9 @@
     \end{minipage}
 
     \begin{lilypond}[staffsize=26]
-    \include "../../templates/lilypond/paper.ly"
-    \include "../../templates/lilypond/layout.ly"
-    \include "../../templates/lilypond/helpers.ly"
+    \include "../../_templates/lilypond/paper.ly"
+    \include "../../_templates/lilypond/layout.ly"
+    \include "../../_templates/lilypond/helpers.ly"
       \include "{{tune.id}}.ly"
       {% block content %}{% endblock %}
     \end{lilypond}

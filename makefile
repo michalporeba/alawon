@@ -16,10 +16,8 @@ all: $(BOOKS)
 
 %/music.json: %/all
 
-
 %/makefile:
-	cp _templates/makefile.template $*/makefile
-
+	sed 's/BOOK\_FOLDER/$*/g' _templates/makefile.template > $*/makefile
 
 %/all: %/makefile %/templates
 	make --directory=$* prints

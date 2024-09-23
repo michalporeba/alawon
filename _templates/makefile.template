@@ -34,7 +34,6 @@ $(OUT_DIR)/mandolin/%: $(LYTEX_DIR)/mandolin/%.lytex
 	cp $(LYTEX_DIR)/out/$*.pdf $(OUT_DIR)/mandolin/$*.pdf
 
 $(OUT_DIR)/%:
-	@echo "generic"
 	cd $(LYTEX_DIR) && lilypond-book --output=out --loglevel=ERROR --pdf $*.lytex
 	cd $(LYTEX_DIR)/out && xelatex -interaction=batchmode $*
 	mkdir -p $(OUT_DIR)
@@ -43,14 +42,15 @@ $(OUT_DIR)/%:
 #single part dots
 #$(LYTEX_DIR)/dots/%.lytex: poetry $(SCORES)/%.ly
 #	@echo "single part dots $*"
-#	cd ../_templates && poetry run python generate.py $(BOOK) $*
+#	cd ../_templates && poetry run python generate.py BOOK_FOLDER $*
 
 #single part mandoline
 #$(LYTEX_DIR)/mandolin/%.lytex: poetry $(SCORES)/%.ly
-#	cd ../_templates && poetry run python generate.py $(BOOK) $*
+#	cd ../_templates && poetry run python generate.py BOOK_FOLDER $*
 
 clean:
 	rm -rf $(LYTEX_DIR)
+	rm makefile
 
 cleanall: clean
-	rm -rf $(OUT_DIR)/*
+	rm -rf $(OUT_DIR)
