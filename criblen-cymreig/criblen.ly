@@ -1,7 +1,7 @@
 \version "2.24.2" 
 
-#(ly:font-config-add-font "../fonts/Alumni_Sans/static/AlumniSans-Light.ttf")
-#(ly:font-config-add-font "../fonts/Oswald/static/Oswald-Regular.ttf")
+#(ly:font-config-add-font "../_assets/fonts/Alumni_Sans/static/AlumniSans-Light.ttf")
+#(ly:font-config-add-font "../_assets/fonts/Oswald/static/Oswald-Regular.ttf")
 
 miniTitle = #(define-scheme-function
   (text) ; Argument: the tempo text

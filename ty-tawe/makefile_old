@@ -45,7 +45,7 @@ $(OUT_DIR)/book.%:
 	cd $(LYTEX_DIR) && lilypond-book --output=out --loglevel=ERROR --pdf book.$*.lytex
 	cd $(LYTEX_DIR)/out && xelatex -interaction=batchmode book.$*
 	mkdir -p $(OUT_DIR)
-	cp $(LYTEX_DIR)/out/book.$*.pdf $(OUT_DIR)/book.$*.pdf
+	cp $(LYTEX_DIR)/out/book.$*.pdf $(OUT_DIR)/$(BOOK).$*.pdf
 
 #single part dots
 $(LYTEX_DIR)/dots/%.lytex: poetry $(SRC_DIR)/%.ly
