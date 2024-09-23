@@ -1,22 +1,15 @@
 .PHONY: all poetry templates
 
+
 BOOKS := $(wildcard */music.json)
+
 
 poetry:
 	cd _templates && poetry install --no-root
 
+
 %/templates: poetry
 	cd _templates && poetry run python generate.py $*
-
-
-clean:
-#  rm -rf $(LYTEX_DIR)
-
-cleanall: clean
-#  rm -rf $(OUT_DIR)/*
-
-wip: clean poetry prints/dots/king_of_swansea
-	open prints/dots/king_of_swansea.pdf
 
 
 all: $(BOOKS)
@@ -35,5 +28,11 @@ all: $(BOOKS)
 %/clean: %/makefile
 	make --directory=$* clean
 
+
 %/cleanall: %/makefile
 	make --directory=$* cleanall
+
+
+wip: ty-tawe/templates ty-tawe/makefile
+	make --directory=ty-tawe prints/book.dots
+	open ty-tawe/prints/book.dots.pdf

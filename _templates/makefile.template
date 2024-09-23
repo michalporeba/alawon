@@ -54,6 +54,3 @@ clean:
 
 cleanall: clean
 	rm -rf $(OUT_DIR)/*
-
-wip: clean poetry prints/dots/king_of_swansea
-	open prints/dots/king_of_swansea.pdf
