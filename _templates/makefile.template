@@ -37,7 +37,7 @@ $(OUT_DIR)/mandolin/%: $(LYTEX_DIR)/mandolin/%.lytex
 	cp $(LYTEX_DIR)/out/$*.pdf $(OUT_DIR)/mandolin/$*.pdf
 
 parts:
-	cp -r parts templates/
+	cp -r parts templates/out/
 
 $(OUT_DIR)/BOOK_NAME.nomusic.pdf: parts
 	cd $(LYTEX_DIR) && lilypond-book --output=out --loglevel=ERROR --pdf book.nomusic.lytex

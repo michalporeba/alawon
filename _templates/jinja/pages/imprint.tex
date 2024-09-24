@@ -25,17 +25,16 @@
     \large{ {{subtitle.text}} }
     \vspace{0.25cm}
   {% endif %}
-
   \large{ {{titlenote.text}} }
-  \vspace{1.5cm}
 
-  \IfFileExists{../parts/imprint.tex}{
-    \include{../parts/imprint.tex}
-    \color{red}
-    path exists
+  \vspace{0.5cm}
+
+  \IfFileExists{parts/imprint.tex}{
+      \include{parts/imprint.tex}
+      \vspace*{-1.45cm}
   }{
     \color{red}
+
     missing parts/imprint.tex
   }
-
 \end{minipage}
