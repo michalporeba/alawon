@@ -4,11 +4,11 @@ SCORES := scores
 LYTEX_DIR := templates
 OUT_DIR := prints
 PART_SOURCES := $(wildcard $(LYTEX_DIR)/*/*.lytex)
-BOOK_SOURCES := $(wildcard $(LYTEX_DIR)/*.lytex)
+BOOK_SOURCES := $(wildcard $(LYTEX_DIR)/book.*.lytex)
 
 prints: individual_prints book_prints
 
-book_prints: $(BOOK_SOURCES:$(LYTEX_DIR)/%.lytex=$(OUT_DIR)/%)
+book_prints: $(BOOK_SOURCES:$(LYTEX_DIR)/book.%.lytex=$(OUT_DIR)/BOOK_NAME.%.pdf)
 
 individual_prints: \
 	$(PART_SOURCES:$(LYTEX_DIR)/dots/%.lytex=$(OUT_DIR)/dots/%) \
@@ -33,20 +33,35 @@ $(OUT_DIR)/mandolin/%: $(LYTEX_DIR)/mandolin/%.lytex
 	mkdir -p $(OUT_DIR)/mandolin
 	cp $(LYTEX_DIR)/out/$*.pdf $(OUT_DIR)/mandolin/$*.pdf
 
-$(OUT_DIR)/%:
-	cd $(LYTEX_DIR) && lilypond-book --output=out --loglevel=ERROR --pdf $*.lytex
-	cd $(LYTEX_DIR)/out && xelatex -interaction=batchmode $*
+$(OUT_DIR)/BOOK_NAME.nomusic.pdf:
+	cd $(LYTEX_DIR) && lilypond-book --output=out --loglevel=ERROR --pdf book.nomusic.lytex
+	cd $(LYTEX_DIR)/out && xelatex -interaction=batchmode book.nomusic
+	cd $(LYTEX_DIR)/out && xelatex -interaction=batchmode book.nomusic
 	mkdir -p $(OUT_DIR)
-	cp $(LYTEX_DIR)/out/$*.pdf $(OUT_DIR)/$*.pdf
+	cp $(LYTEX_DIR)/out/book.nomusic.pdf $(OUT_DIR)/BOOK_NAME.nomusic.pdf
+
+$(OUT_DIR)/BOOK_NAME.%.pdf:
+	mv $(LYTEX_DIR)/book.$*.lytex $(LYTEX_DIR)/book.$*.lytex.original
+	cp $(LYTEX_DIR)/book.nomusic.lytex $(LYTEX_DIR)/book.$*.lytex
+	cd $(LYTEX_DIR) && lilypond-book --output=out --loglevel=ERROR --pdf book.$*.lytex
+	cd $(LYTEX_DIR)/out && xelatex -interaction=batchmode book.$*
+
+	rm $(LYTEX_DIR)/book.$*.lytex
+	mv $(LYTEX_DIR)/book.$*.lytex.original $(LYTEX_DIR)/book.$*.lytex
+	cd $(LYTEX_DIR) && lilypond-book --output=out --loglevel=ERROR --pdf book.$*.lytex
+	cd $(LYTEX_DIR)/out && xelatex -interaction=batchmode book.$*
+	
+	mkdir -p $(OUT_DIR)
+	cp $(LYTEX_DIR)/out/book.$*.pdf $(OUT_DIR)/BOOK_NAME.$*.pdf
 
 #single part dots
 #$(LYTEX_DIR)/dots/%.lytex: poetry $(SCORES)/%.ly
 #	@echo "single part dots $*"
-#	cd ../_templates && poetry run python generate.py BOOK_FOLDER $*
+#	cd ../_templates && poetry run python generate.py BOOK_NAME $*
 
 #single part mandoline
 #$(LYTEX_DIR)/mandolin/%.lytex: poetry $(SCORES)/%.ly
-#	cd ../_templates && poetry run python generate.py BOOK_FOLDER $*
+#	cd ../_templates && poetry run python generate.py BOOK_NAME $*
 
 clean:
 	rm -rf $(LYTEX_DIR)

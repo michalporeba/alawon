@@ -17,11 +17,16 @@ all: $(BOOKS)
 %/music.json: %/all
 
 %/makefile:
-	sed 's/BOOK\_FOLDER/$*/g' _templates/makefile.template > $*/makefile
+	sed 's/BOOK\_NAME/$*/g' _templates/makefile.template > $*/makefile
 
 %/all: %/makefile %/templates
 	make --directory=$* prints
 
+%/books: %/makefile %/templates
+	make --directory=$* book_prints
+
+%/nomusic: %/makefile %/templates
+	make --directory=$* prints/$*.nomusic.pdf
 
 %/clean: %/makefile
 	make --directory=$* clean
@@ -32,5 +37,5 @@ all: $(BOOKS)
 
 
 wip: ty-tawe/templates ty-tawe/makefile
-	make --directory=ty-tawe prints/book.dots
-	open ty-tawe/prints/book.dots.pdf
+	make --directory=ty-tawe prints/ty-tawe.dots
+	open ty-tawe/prints/ty-tawe.dots.pdf

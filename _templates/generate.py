@@ -46,13 +46,13 @@ def group_tunes(tunes):
   return sections
 
 
-def render_all(sections, template_name):
+def render_all(sections, template_name, nomusic=False):
   environment = Environment(loader=FileSystemLoader('jinja'))
   template = environment.get_template(template_name)
 
   book_options = json.load(open(f'../{location}/book.json'))
 
-  yield { "id": template_name, "output": template.render(sections=sections, **book_options) }
+  yield { "id": template_name, "output": template.render(sections=sections, nomusic=nomusic, **book_options) }
 
 
 def render_each(tunes, template_name):
@@ -107,6 +107,7 @@ def main():
     for section in sections:
       print(f'INFO: There are {len(section.tunes)} {section.name}s')
 
+    save(render_all(sections, 'book-in-dots.lytex', nomusic=True), output_location+'book.nomusic.lytex')
     save(render_all(sections, 'book-in-dots.lytex'), output_location+'book.dots.lytex')
     save(render_all(sections, 'book-in-guitar.lytex'), output_location+'book.guitar.lytex')
     save(render_all(sections, 'book-in-mandolin.lytex'), output_location+'book.mandolin.lytex')

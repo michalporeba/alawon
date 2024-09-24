@@ -142,6 +142,7 @@
     {% endif %}
 \end{minipage}
 
+    {% if not nomusic|default(false, true) %}
     {% for tune in section.tunes %}
 
     \newpage
@@ -176,6 +177,14 @@
     \end{lilypond}
 
   {% endfor %}
+  {% else %}
+    \vspace*{5cm}
+    \begin{center}
+    \color{red}
+    music notation removed
+    \end{center}
+    \newpage
+  {% endif %}
 
 {% endfor %}
 \end{document}
