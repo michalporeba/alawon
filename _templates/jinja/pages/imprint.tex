@@ -6,43 +6,36 @@
 \noindent
 \begin{minipage}[b][\textheight]{0.3\textwidth}
     \strut
+    {% if isDraft|default(false, true) %}
     Draft version (\today)
     \\
-    Cover photo by Sarah Osborn
+    {% endif %}
+    Cover photo by {{cover.author}}
     \\
     Notation by Michał Poręba
 \end{minipage}%
 \hfill
 \begin{minipage}[b]{0.7\textwidth}
-    \begin{multicols}{2}
-    [
-      \Huge{Making the Marks} \\
-      \large{still drawing of a theoretical object}\\
-      \large{notes from Yscolan with Ceri Rhys Matthews}
-      \vspace{1.5cm}
-    ]
-    \normalsize{
-      \noindent Casgliad o alawon cymreig wedi cael eu rhanu gan Ceri Rhys Matthews
-      yn sesinau Yscolan yn Abertawe, Pentre Ifan a Thremarchog.
-      \\
-      \\
-      Nid tonau yw nhw, nac alawon ydynt, dim ond argraffiadau o gerddoriaeth
-      fel clywyd hi ar y pryd. Cymerwch hi neu beidiwch, Ond beth bynnag wnewch chi,
-      peidiwch â'i chwarae fel y gwelwch hi yma.
-    }
+  {% if subtitle.aboveTitle|default(false, true) %}
+    \large{ {{subtitle.text}} }\\
+    \Huge{ {{title.text}} }
+    \vspace{0.45cm}
+  {% else %}
+    \Huge{ {{title.text}} }\\
+    \large{ {{subtitle.text}} }
+    \vspace{0.25cm}
+  {% endif %}
 
-    \newcolumn
+  \large{ {{titlenote.text}} }
+  \vspace{1.5cm}
 
-    \normalsize{
-      \noindent A collection of Welsh melodies shared by Ceri Rhys Matthews
-      during Yscolan sessions in Swansea, Pentre Ifan and Tremarchog.
-      \\
-      \\
-      These are not the tunes, not the melodies, just impressions of music
-      as it was heard at the time. Take it as you will, make it your own.
-      And whatever you do, don't play it as you see it here.
-    }
-
-    \end{multicols}
+  \IfFileExists{../parts/imprint.tex}{
+    \include{../parts/imprint.tex}
+    \color{red}
+    path exists
+  }{
+    \color{red}
+    missing parts/imprint.tex
+  }
 
 \end{minipage}

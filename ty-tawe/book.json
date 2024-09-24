@@ -1,6 +1,8 @@
 {
-  "picture": {
-    "author": "Huw Dylan Owen"
+  "isDraft": true,
+  "cover": {
+    "author": "Huw Dylan Owen",
+    "trim": "0 6cm 12cm 3cm"
   },
   "title": {
     "xshift": 1,
@@ -8,8 +10,11 @@
     "text": "Sessinau Tŷ Tawe"
   },
   "subtitle": {
-    "xshift": 3,
-    "yshift": 6,
+    "aboveTitle": true,
+    "anchor": "south west",
+    "anchorTo": "title-node.north west",
+    "xshift": 0,
+    "yshift": 0.5,
     "text": "Alawon a chaneon gwerin"
   },
   "titlenote": {

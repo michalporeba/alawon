@@ -1,15 +1,16 @@
 {
-  "picture": {
+  "isDraft": true,
+  "cover": {
     "author": "Sarah Osborn"
   },
   "title": {
     "xshift": 1,
-    "yshift": 8.7,
+    "yshift": 3,
     "text": "Making the Marks"
   },
   "subtitle": {
-    "xshift": 3,
-    "yshift": 6,
+    "xshift": 3.7,
+    "yshift": -0.25,
     "text": "still drawing of a theoretical object"
   },
   "titlenote": {

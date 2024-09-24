@@ -8,7 +8,10 @@ BOOK_SOURCES := $(wildcard $(LYTEX_DIR)/book.*.lytex)
 
 prints: individual_prints book_prints
 
-book_prints: $(BOOK_SOURCES:$(LYTEX_DIR)/book.%.lytex=$(OUT_DIR)/BOOK_NAME.%.pdf)
+book_prints: \
+	book.json \
+	music.json \
+	$(BOOK_SOURCES:$(LYTEX_DIR)/book.%.lytex=$(OUT_DIR)/BOOK_NAME.%.pdf)
 
 individual_prints: \
 	$(PART_SOURCES:$(LYTEX_DIR)/dots/%.lytex=$(OUT_DIR)/dots/%) \
@@ -33,9 +36,12 @@ $(OUT_DIR)/mandolin/%: $(LYTEX_DIR)/mandolin/%.lytex
 	mkdir -p $(OUT_DIR)/mandolin
 	cp $(LYTEX_DIR)/out/$*.pdf $(OUT_DIR)/mandolin/$*.pdf
 
-$(OUT_DIR)/BOOK_NAME.nomusic.pdf:
+parts:
+	cp -r parts templates/
+
+$(OUT_DIR)/BOOK_NAME.nomusic.pdf: parts
 	cd $(LYTEX_DIR) && lilypond-book --output=out --loglevel=ERROR --pdf book.nomusic.lytex
-	cd $(LYTEX_DIR)/out && xelatex -interaction=batchmode book.nomusic
+	cd $(LYTEX_DIR)/out && xelatex book.nomusic
 	cd $(LYTEX_DIR)/out && xelatex -interaction=batchmode book.nomusic
 	mkdir -p $(OUT_DIR)
 	cp $(LYTEX_DIR)/out/book.nomusic.pdf $(OUT_DIR)/BOOK_NAME.nomusic.pdf
@@ -50,7 +56,7 @@ $(OUT_DIR)/BOOK_NAME.%.pdf:
 	mv $(LYTEX_DIR)/book.$*.lytex.original $(LYTEX_DIR)/book.$*.lytex
 	cd $(LYTEX_DIR) && lilypond-book --output=out --loglevel=ERROR --pdf book.$*.lytex
 	cd $(LYTEX_DIR)/out && xelatex -interaction=batchmode book.$*
-	
+
 	mkdir -p $(OUT_DIR)
 	cp $(LYTEX_DIR)/out/book.$*.pdf $(OUT_DIR)/BOOK_NAME.$*.pdf
 

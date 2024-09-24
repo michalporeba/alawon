@@ -14,6 +14,10 @@ poetry:
 
 all: $(BOOKS)
 
+nomusic:
+	make -B ty-tawe/nomusic && open ty-tawe/prints/ty-tawe.nomusic.pdf
+	make -B yscolan/nomusic && open yscolan/prints/yscolan.nomusic.pdf
+
 %/music.json: %/all
 
 %/makefile:
