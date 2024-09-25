@@ -43,7 +43,7 @@ def group_tunes(tunes):
       sections['other'].tunes.append(tune)
       print(f'WARNING: [{tune["title"]}] is not categorised and is going to the "other" section')
 
-  return sections
+  return {k: s for k, s in sections.items() if len(s.tunes) > 0}
 
 
 def render_all(sections, template_name, nomusic=False):
