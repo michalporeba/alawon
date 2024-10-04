@@ -1,20 +1,25 @@
-# alawtawe
-Casgliad o alawon Abertawe
+# Alawon - Melodies
+Collections of traditional music from various sources.
+The music is encoded with [Lilypond](https://lilypond.org/) notation.
+The code can be processed to generate either individual pieces, or full books.
 
+
+## Prerequisits
+
+To generate the music it is necessary to have:
+* Python 3.12+
+* Lilypond
+* xlatex
 
 ## generating music
 
-to generate all music
+to generate music from a specific book you can do
 ```bash
-make templates
-make prints
+make yscolan/all
 ```
+where yscolan is the name of folder in which the data is stored.
 
-to generate specific version of a specific melody during development, for example
+Alternative, to generate all scores and books, you can do
 ```bash
-make prints/dots/king_of_swansea
+make all
 ```
-
-when working on dots the following can be used
-```bash
-make templates && make prints/book.dots && open prints/book.dots.pdf
