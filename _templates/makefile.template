@@ -41,6 +41,7 @@ parts:
 
 $(OUT_DIR)/BOOK_NAME.nomusic.pdf: parts
 	cd $(LYTEX_DIR) && lilypond-book --output=out --loglevel=ERROR --pdf book.nomusic.lytex
+	cp -r parts $(LYTEX_DIR)/out/parts
 	cd $(LYTEX_DIR)/out && xelatex book.nomusic
 	cd $(LYTEX_DIR)/out && xelatex -interaction=batchmode book.nomusic
 	mkdir -p $(OUT_DIR)
@@ -54,6 +55,7 @@ $(OUT_DIR)/BOOK_NAME.%.pdf:
 
 	rm $(LYTEX_DIR)/book.$*.lytex
 	mv $(LYTEX_DIR)/book.$*.lytex.original $(LYTEX_DIR)/book.$*.lytex
+	cp -r parts $(LYTEX_DIR)/out/parts
 	cd $(LYTEX_DIR) && lilypond-book --output=out --loglevel=ERROR --pdf book.$*.lytex
 	cd $(LYTEX_DIR)/out && xelatex -interaction=batchmode book.$*
 
