@@ -5,8 +5,14 @@
 
 \geometry{margin=0.5cm}
 
+\setmainfont{IndieFlower-Regular}[
+  Path            = ../../../_assets/fonts/Indie_Flower/ ,
+  UprightFont     = * ,
+  BoldFond        = * ,
+  ItalicFont      = * ,
+  BoldItalicFont  = * ]
+
 \begin{document}
-  \setmainfont{Indie Flower}
   \begin{minipage}[b]{0.7\textwidth}
     \hspace*{-0.5cm}
     \Huge
