@@ -98,6 +98,7 @@ def main():
   save(render_each(tunes, 'tune-in-dots.lytex'), output_location+'dots/{id}.lytex')
   save(render_each(tunes, 'tune-in-guitar.lytex'), output_location+'guitar/{id}.lytex')
   save(render_each(tunes, 'tune-in-mandolin.lytex'), output_location+'mandolin/{id}.lytex')
+  save(render_each(tunes, 'tune-in-gdad.lytex'), output_location+'gdad/{id}.lytex')
 
   if len(sys.argv) == 2:
 
@@ -111,6 +112,7 @@ def main():
     save(render_all(sections, 'book-in-dots.lytex'), output_location+'book.dots.lytex')
     save(render_all(sections, 'book-in-guitar.lytex'), output_location+'book.guitar.lytex')
     save(render_all(sections, 'book-in-mandolin.lytex'), output_location+'book.mandolin.lytex')
+    save(render_all(sections, 'book-in-gdad.lytex'), output_location+'book.gdad.lytex')
 
 
 if __name__ == '__main__':

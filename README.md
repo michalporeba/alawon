@@ -7,7 +7,7 @@ The code can be processed to generate either individual pieces, or full books.
 ## Prerequisits
 
 To generate the music it is necessary to have:
-* Python 3.12+
+* Python 3.12+ and poetry
 * Lilypond
 * xlatex
 

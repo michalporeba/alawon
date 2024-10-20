@@ -15,8 +15,8 @@ poetry:
 all: $(BOOKS)
 
 nomusic:
-	make -B ty-tawe/nomusic && open ty-tawe/prints/ty-tawe.nomusic.pdf
-	make -B yscolan/nomusic && open yscolan/prints/yscolan.nomusic.pdf
+	make -B ty-tawe/nomusic && xdg-open ty-tawe/prints/ty-tawe.nomusic.pdf
+	make -B yscolan/nomusic && xdg-open yscolan/prints/yscolan.nomusic.pdf
 
 %/music.json: %/all
 
@@ -35,11 +35,15 @@ nomusic:
 %/clean: %/makefile
 	make --directory=$* clean
 
-
 %/cleanall: %/makefile
 	make --directory=$* cleanall
 
 
-wip: ty-tawe/templates ty-tawe/makefile
+tytawewip: ty-tawe/templates ty-tawe/makefile
 	make --directory=ty-tawe prints/ty-tawe.dots
-	open ty-tawe/prints/ty-tawe.dots.pdf
+	xdg-open ty-tawe/prints/ty-tawe.dots.pdf
+
+yscolanwip: yscolan/makefile
+	cd _templates && poetry run python generate.py yscolan pia_ar_ben_yr_onnen
+	make -B --directory=yscolan prints/dots/pia_ar_ben_yr_onnen
+	xdg-open yscolan/prints/dots/pia_ar_ben_yr_onnen.pdf

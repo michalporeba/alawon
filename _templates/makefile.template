@@ -16,7 +16,8 @@ book_prints: \
 individual_prints: \
 	$(PART_SOURCES:$(LYTEX_DIR)/dots/%.lytex=$(OUT_DIR)/dots/%) \
 	$(PART_SOURCES:$(LYTEX_DIR)/guitar/%.lytex=$(OUT_DIR)/guitar/%) \
-	$(PART_SOURCES:$(LYTEX_DIR)/mandolin/%.lytex=$(OUT_DIR)/mandolin/%)
+	$(PART_SOURCES:$(LYTEX_DIR)/mandolin/%.lytex=$(OUT_DIR)/mandolin/%) \
+	$(PART_SOURCES:$(LYTEX_DIR)/gdad/%.lytex=$(OUT_DIR)/gdad/%)
 
 $(OUT_DIR)/dots/%: $(LYTEX_DIR)/dots/%.lytex
 	cd $(LYTEX_DIR) && lilypond-book --output=out --loglevel=ERROR --pdf dots/$*.lytex
@@ -35,6 +36,12 @@ $(OUT_DIR)/mandolin/%: $(LYTEX_DIR)/mandolin/%.lytex
 	cd $(LYTEX_DIR)/out && xelatex -interaction=batchmode $*
 	mkdir -p $(OUT_DIR)/mandolin
 	cp $(LYTEX_DIR)/out/$*.pdf $(OUT_DIR)/mandolin/$*.pdf
+
+$(OUT_DIR)/gdad/%: $(LYTEX_DIR)/gdad/%.lytex
+	cd $(LYTEX_DIR) && lilypond-book --output=out --loglevel=ERROR --pdf gdad/$*.lytex
+	cd $(LYTEX_DIR)/out && xelatex -interaction=batchmode $*
+	mkdir -p $(OUT_DIR)/gdad
+	cp $(LYTEX_DIR)/out/$*.pdf $(OUT_DIR)/gdad/$*.pdf
 
 parts:
 	cp -r parts templates/out/

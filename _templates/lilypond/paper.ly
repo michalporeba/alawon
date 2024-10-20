@@ -16,7 +16,7 @@
     % #(set-paper-size "a5landscape")
     
     #(define fonts (make-pango-font-tree 
-                          "Indie Flower"
+                          "../../_assets/fonts/Indie_Flower/IndieFlower-Regular.ttf"
                           "Autobus Bold"
                           "Truetypewriter"
                           (/ staff-height pt 20)))
