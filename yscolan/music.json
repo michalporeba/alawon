@@ -592,5 +592,17 @@
     "name": "minuet",
     "signature": "6/4"
   }
+}, {
+  "id": "tenby_rocks",
+  "title": "Tenby Rocks",
+  "recording": {
+    "date": "2025-02-22",
+    "performer": "Ceri Rhys Matthews",
+    "location": "Elysium, Swansea"
+  },
+  "rhythm": {
+    "name": "jig",
+    "signature": "6/8"
+  }
 }
 ]
