@@ -567,5 +567,17 @@
     "name": "other",
     "signature": "2/2"
   }
+}, {
+  "id": "swansea_rant",
+  "title": "Swansea Rant",
+  "recording": {
+    "date": "2025-02-08",
+    "performer": "Ceri Rhys Matthews",
+    "location": "Elysium, Swansea"
+  },
+  "rhythm": {
+    "name": "reel",
+    "signature": "2/4"
+  }
 }
 ]

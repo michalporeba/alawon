@@ -44,6 +44,6 @@ tytawewip: ty-tawe/templates ty-tawe/makefile
 	xdg-open ty-tawe/prints/ty-tawe.dots.pdf
 
 yscolanwip: yscolan/makefile
-	cd _templates && poetry run python generate.py yscolan pia_ar_ben_yr_onnen
-	make -B --directory=yscolan prints/dots/pia_ar_ben_yr_onnen
-	xdg-open yscolan/prints/dots/pia_ar_ben_yr_onnen.pdf
+	cd _templates && poetry run python generate.py yscolan ${WIP_SCORE}
+	make -B --directory=yscolan prints/dots/${WIP_SCORE}
+	xdg-open yscolan/prints/dots/${WIP_SCORE}.pdf
