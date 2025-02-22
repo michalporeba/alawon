@@ -50,4 +50,6 @@ export WIP_SCORE=fancy_tune
 ```
 And execute `make yscolanwip`.
 
+Sometimes the work in progress pdf does not refresh. Runing `make yscolan/clean` helps. 
+
 

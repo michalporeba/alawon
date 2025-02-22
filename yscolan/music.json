@@ -580,5 +580,17 @@
     "name": "reel",
     "signature": "2/4"
   }
+}, {
+  "id": "pwll_y_glas",
+  "title": "Pwll-y-Glas",
+  "recording": {
+    "date": "2025-02-08",
+    "performer": "Ceri Rhys Matthews",
+    "location": "Elysium, Swansea"
+  },
+  "rhythm": {
+    "name": "minuet",
+    "signature": "6/4"
+  }
 }
 ]
