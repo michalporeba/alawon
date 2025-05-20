@@ -630,5 +630,19 @@
     "name": "jig",
     "signature": "6/8"
   }
+}, {
+  "id": "deildy_aberteifi",
+  "title": "Deildy Aberteifi (Rick Limes)",
+  "short_title": "Deildy Aberteifi",
+  "recording": {
+    "date": "2025-02-26",
+    "performer": "Ceri Rhys Matthews",
+    "location": "Llandysul, Swansea"
+  },
+  "notes": "The tune was originally in D and has been somewhat modified by Ceri and Martin Lemon before Rick Limes set it in G to fit his pipes better.",
+  "rhythm": {
+    "name": "jig",
+    "signature": "6/8"
+  }
 }
 ]
