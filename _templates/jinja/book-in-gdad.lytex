@@ -1,4 +1,4 @@
 {% extends "book.lytex" %}
 
 {% block notation %}gdad{% endblock %}
-{% block content %}\mandolin{% endblock %}
+{% block content %}\gdad{% endblock %}
