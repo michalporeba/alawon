@@ -15,5 +15,41 @@
   },
   "titlenote": {
     "text": "notes from Yscolan with Ceri Rhys Matthews"
+  },
+  "layout": {
+    "imprint": {
+      "type": "page"
+    },
+    "marches": {
+      "type": "tunes",
+      "rhythms": ["march"]
+    },
+    "hornpipes": {
+      "type": "tunes",
+      "rhythms": ["hornpipe"]
+    },
+    "minuets": {
+      "type": "tunes",
+      "rhythms": ["minuet"]
+    },
+    "jigs": {
+      "type": "tunes",
+      "rhythms": ["jig"]
+    },
+    "slipjigs": {
+      "type": "tunes",
+      "rhythms": ["slipjig"]
+    },
+    "slides": {
+      "type": "tunes",
+      "rhythms": ["slide"]
+    },
+    "reels": {
+      "type": "tunes",
+      "rhythms": ["reel"] 
+    },
+    "others": {
+      "type": "tunes"
+    }
   }
 }

@@ -89,115 +89,100 @@
 \end{titlepage}
 
 
+{% for section_id, section in sections.items() %}
+  {% set page_part_file = "pages/" ~ section_id ~ ".tex" %}
+  
+  {% if section.type == "page" %}
+    {% include page_part_file ignore missing %}
 
-{% include "pages/imprint.tex" %}
+  {% elif section.tunes|length > 0 %}
+    \newpage 
+    
+    \AddToShipoutPictureBG*{
+      \AtPageLowerLeft{ % Starts from the bottom left corner of the page
+          \color{gray!5!white} % Set the color of the rectangle
+          \hspace*{-5mm}
+          \rule{0.29\paperwidth}{\paperheight} % Width and height of the rectangle
+          \color{gray!20!white} % Set the color of the rectangle
+          \hspace*{-5mm}
+          \rule{3mm}{\paperheight} % Width and height of the rectangle
+      }
+    }
 
-{% for section in sections %}
-\newpage
+    \setlength{\columnsep}{0.5cm}
 
-\AddToShipoutPictureBG*{
-  \AtPageLowerLeft{ % Starts from the bottom left corner of the page
-      \color{gray!5!white} % Set the color of the rectangle
-      \hspace*{-5mm}
-      \rule{0.29\paperwidth}{\paperheight} % Width and height of the rectangle
-      \color{gray!20!white} % Set the color of the rectangle
-      \hspace*{-5mm}
-      \rule{3mm}{\paperheight} % Width and height of the rectangle
-  }
-}
-
-\setlength{\columnsep}{0.5cm}
-
-\noindent
-\begin{minipage}[b][\textheight]{0.28\textwidth}
-    {% for tune in section.tunes %}
-      \vspace*{5mm}
-
-      \noindent
-      \sffamily
-      \large
-        {% if tune.shorttitle %}
-          {{tune.shorttitle }}
-        {% else %}
-          {{tune.title }}
-        {% endif %}
-    {% endfor %}
-    \vspace*{1mm}
-\end{minipage}%
-\hfill
-\begin{minipage}[t][\textheight]{0.7\textwidth}
-    {% if section.name == "march" %}
-      {% include "pages/marches.tex" %}
-    {% elif section.name == "hornpipe" %}
-      {% include "pages/hornpipes.tex" %}
-    {% elif section.name == "minuet" %}
-      {% include "pages/minuets.tex" %}
-    {% elif section.name == "jig" %}
-      {% include "pages/jigs.tex" %}
-    {% elif section.name == "slipjig" %}
-      {% include "pages/slipjigs.tex" %}
-    {% elif section.name == "slide" %}
-      {% include "pages/slides.tex" %}
-    {% elif section.name == "reel" %}
-      {% include "pages/reels.tex" %}
-    {% elif section.name == "other" %}
-      {% if section.tunes|length > 0 %}
-        {% include "pages/others.tex" %}
-      {% endif %}
-    {% else %}
-      \section*{ Missing section template for {{section.name }} }
-    {% endif %}
-\end{minipage}
-
+    \noindent
+    \begin{minipage}[b][\textheight]{0.28\textwidth}
+      {% for tune in section.tunes %}
+          \vspace*{5mm}
+          \noindent
+          \sffamily
+          \large
+            {% if tune.shorttitle %}
+              {{tune.shorttitle }}
+            {% else %}
+              {{tune.title }}
+            {% endif %}
+      {% endfor %}
+      \vspace*{1mm}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t][\textheight]{0.7\textwidth}
+      \IfFileExists{ ../../parts/{{section_id}}.tex }{
+        \input{ ../../parts/{{section_id}}.tex }
+      }{ {% include page_part_file ignore missing %} }
+    \end{minipage}
+    
     {% if not nomusic|default(false, true) %}
     {% for tune in section.tunes %}
 
-    \newpage
+      \newpage
 
-    \setsansfont{IndieFlower-Regular}[
-      Path            = ../../../_assets/fonts/Indie_Flower/ ,
-      UprightFont     = * ,
-      BoldFond        = * ,
-      ItalicFont      = * ,
-      BoldItalicFont  = * ]
-      
-    \begin{minipage}[b]{0.7\textwidth}
-      \hspace*{-0.5cm}
-      \Huge
-      \raisebox{0pt}[1cm][0.2cm]{\noindent {{tune.title}} }
-    \end{minipage}%
-    \hfill%
-    \begin{minipage}[b]{0.3\textwidth}
-      {% if tune.composer %}
-        \raggedleft
-        \raisebox{0pt}[0.5cm][0pt]{ {{tune.composer}} }
-        \hspace{1.1cm}
-      {% endif %}
-      {% if tune.form %}
-        \raggedleft
-        \raisebox{0pt}[0.5cm][0pt]{ form: {{tune.form}} }
-        \hspace{1.1cm}
-      {% endif %}
+      \setsansfont{IndieFlower-Regular}[
+        Path            = ../../../_assets/fonts/Indie_Flower/ ,
+        UprightFont     = * ,
+        BoldFond        = * ,
+        ItalicFont      = * ,
+        BoldItalicFont  = * ]
+        
+      \begin{minipage}[b]{0.7\textwidth}
+        \hspace*{-0.5cm}
+        \Huge
+        \raisebox{0pt}[1cm][0.2cm]{\noindent {{tune.title}} }
+      \end{minipage}%
+      \hfill%
+      \begin{minipage}[b]{0.3\textwidth}
+        {% if tune.composer %}
+          \raggedleft
+          \raisebox{0pt}[0.5cm][0pt]{ {{tune.composer}} }
+          \hspace{1.1cm}
+        {% endif %}
+        {% if tune.form %}
+          \raggedleft
+          \raisebox{0pt}[0.5cm][0pt]{ form: {{tune.form}} }
+          \hspace{1.1cm}
+        {% endif %}
 
-    \end{minipage}
+      \end{minipage}
 
-    \begin{lilypond}[staffsize=26]
-      \include "../../_templates/lilypond/paper.ly"
-      \include "../../_templates/lilypond/layout.ly"
-      \include "../../_templates/lilypond/helpers.ly"
-      \include "{{tune.id}}.ly"
-      {% block content %}{% endblock %}
-    \end{lilypond}
+      \begin{lilypond}[staffsize=26]
+        \include "../../_templates/lilypond/paper.ly"
+        \include "../../_templates/lilypond/layout.ly"
+        \include "../../_templates/lilypond/helpers.ly"
+        \include "{{tune.id}}.ly"
+        {% block content %}{% endblock %}
+      \end{lilypond}
 
-  {% endfor %}
-  {% else %}
-    \vspace*{5cm}
-    \begin{center}
-    \color{red}
-    music notation removed
-    \end{center}
-    \newpage
+    {% endfor %}
+    {% else %}
+      \vspace*{5cm}
+      \begin{center}
+      \color{red}
+        music notation removed
+      \end{center}
+      \newpage
+    {% endif %}
+
   {% endif %}
-
 {% endfor %}
 \end{document}

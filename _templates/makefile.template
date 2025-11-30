@@ -54,7 +54,7 @@ $(OUT_DIR)/BOOK_NAME.nomusic.pdf: parts
 	mkdir -p $(OUT_DIR)
 	cp $(LYTEX_DIR)/out/book.nomusic.pdf $(OUT_DIR)/BOOK_NAME.nomusic.pdf
 
-$(OUT_DIR)/BOOK_NAME.%.pdf:
+$(OUT_DIR)/BOOK_NAME.%.pdf: 
 	mv $(LYTEX_DIR)/book.$*.lytex $(LYTEX_DIR)/book.$*.lytex.original
 	cp $(LYTEX_DIR)/book.nomusic.lytex $(LYTEX_DIR)/book.$*.lytex
 	cd $(LYTEX_DIR) && lilypond-book --output=out --loglevel=ERROR --pdf book.$*.lytex
@@ -68,6 +68,9 @@ $(OUT_DIR)/BOOK_NAME.%.pdf:
 
 	mkdir -p $(OUT_DIR)
 	cp $(LYTEX_DIR)/out/book.$*.pdf $(OUT_DIR)/BOOK_NAME.$*.pdf
+
+$(LYTEX_DIR)/book.%.lytex: poetry book.json music.json
+	cd ../_templates && poetry run python generate.py BOOK_NAME
 
 #single part dots
 #$(LYTEX_DIR)/dots/%.lytex: poetry $(SCORES)/%.ly

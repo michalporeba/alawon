@@ -7,7 +7,7 @@
   "title": {
     "xshift": 1,
     "yshift": 8.7,
-    "text": "Sessinau Tŷ Tawe"
+    "text": "Sesiynau Tŷ Tawe"
   },
   "subtitle": {
     "aboveTitle": true,
@@ -19,5 +19,19 @@
   },
   "titlenote": {
     "text": "notes from the Ty Tawe sessions"
+  },
+  "layout": {
+    "imprint": {
+      "type": "page"
+    },
+    "mynediad": {
+      "type": "tunes"
+    },
+    "sylfaen": {
+      "type": "tunes"
+    },
+    "ehangiad": {
+      "type": "tunes"
+    }
   }
 }
