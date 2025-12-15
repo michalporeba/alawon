@@ -1,17 +1,6 @@
 [{
-  "id": "go_at_swansea",
-  "title": "The Go at Swansea",
-  "composer": "William Burton Harp",
-  "recording": {
-    "date": "2022-09-17",
-    "performer": "Ceri Rhys Matthews",
-    "location": "Elysium, Swansea"
-  },
-  "notes": "",
-  "rhythm": {
-    "name": "march",
-    "signature": "4/4"
-  },
+  "id": "cader_idris",
+  "title": "Cader Idris",
   "section": "mynediad"
 },
 {
@@ -20,8 +9,33 @@
   "section": "sylfaen"
 },
 {
+  "id": "helar_sgyfarnog",
+  "title": "Hela'r Sgyfarnog",
+  "section": "sylfaen"
+},
+{
   "id": "nyth_y_gwcw",
   "title": "Nyth y Gwcw",
   "section": "ehangiad"
+},
+{
+  "id": "pant_corlan_yr_wyn",
+  "title": "Pant Corlan yr Ŵyn",
+  "section": "mynediad"
+},
+{
+  "id": "pwt_ar_y_bys",
+  "title": "Pwt ar y Bys",
+  "section": "mynediad"
+},
+{
+  "id": "y_crwtyn_llwyd",
+  "title": "Y Crwtyn Llwyd",
+  "section": "mynediad"
+},
+{
+  "id": "y_delyn_newydd",
+  "title": "Y Delyn Newydd",
+  "section": "mynediad"
 }
 ]

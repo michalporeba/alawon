@@ -41,7 +41,7 @@ nomusic:
 
 tytawewip: ty-tawe/makefile
 	cd _templates && poetry run python generate.py ty-tawe ${WIP_SCORE}
-	rm ty-tawe/prints/dots/${WIP_SCORE}.pdf || true 
+	rm -f ty-tawe/prints/dots/${WIP_SCORE}.pdf || true 
 	make -B --directory=ty-tawe prints/dots/${WIP_SCORE}
 	xdg-open ty-tawe/prints/dots/${WIP_SCORE}.pdf
 
