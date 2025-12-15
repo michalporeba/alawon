@@ -9,6 +9,11 @@
   "section": "sylfaen"
 },
 {
+  "id": "glandyfi",
+  "title": "Glandyfi",
+  "section": "sylfaen"
+},
+{
   "id": "helar_sgyfarnog",
   "title": "Hela'r Sgyfarnog",
   "section": "sylfaen"
@@ -27,6 +32,11 @@
   "id": "pwt_ar_y_bys",
   "title": "Pwt ar y Bys",
   "section": "mynediad"
+},
+{
+  "id": "ty_a_gardd",
+  "title": "Tŷ a Gardd",
+  "section": "sylfaen"
 },
 {
   "id": "y_crwtyn_llwyd",
