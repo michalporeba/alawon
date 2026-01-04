@@ -4,6 +4,12 @@
   "section": "mynediad"
 },
 {
+  "id": "cainc_ieuan",
+  "title": "Cainc Ieuan y Teynor Dall",
+  "short_title": "Cainc Ieuan",
+  "section": "sylfaen"
+},
+{
   "id": "ffarwel_ir_marian",
   "title": "Ffarwel i'r Marian",
   "section": "sylfaen"
@@ -17,6 +23,11 @@
   "id": "helar_sgyfarnog",
   "title": "Hela'r Sgyfarnog",
   "section": "sylfaen"
+},
+{
+  "id": "helar_sgwarnog",
+  "title": "Hela'r Sgwarnog",
+  "section": "mynediad"
 },
 {
   "id": "nyth_y_gwcw",
@@ -47,5 +58,10 @@
   "id": "y_delyn_newydd",
   "title": "Y Delyn Newydd",
   "section": "mynediad"
+},
+{
+  "id": "y_lily",
+  "title": "Y Lily",
+  "section": "sylfaen"
 }
 ]
