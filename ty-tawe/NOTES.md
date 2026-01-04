@@ -8,6 +8,7 @@ arall
  - beth yw'r haf i mi (alaw neu gan?)
  - pibddawns gwyr gwrecsam (ehangiad)
  - polca cefn coed
+ - gwenynen gwent 
 
 pibau
  - y crwtyn llwyd

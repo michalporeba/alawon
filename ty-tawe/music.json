@@ -10,6 +10,11 @@
   "section": "sylfaen"
 },
 {
+  "id": "castell_caernarfon",
+  "title": "Castell Caernarfon",
+  "section": "mynediad"
+},
+{
   "id": "chwi_fechgyn",
   "title": "Chwi Fechgyn Glân Ffri",
   "short_title": "Chwi Fechgyn",
@@ -38,6 +43,11 @@
 {
   "id": "helar_sgwarnog",
   "title": "Hela'r Sgwarnog",
+  "section": "mynediad"
+},
+{
+  "id": "mon",
+  "title": "Môn",
   "section": "mynediad"
 },
 {
