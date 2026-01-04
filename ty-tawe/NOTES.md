@@ -14,4 +14,6 @@ pibau
 
 caneuon
  - harbwr corc
+ - ton ton ton
+ - bachgen bach o dincar
 
