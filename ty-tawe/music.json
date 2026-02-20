@@ -31,6 +31,16 @@
   "section": "sylfaen"
 },
 {
+  "id": "ffidl_ffadl",
+  "title": "Ffidl Ffadl",
+  "section": "mynediad"
+},
+{
+  "id": "glan_medddod_mwyn",
+  "title": "Glan Medd'dod Mwyn",
+  "section": "sylfaen"
+},
+{
   "id": "glandyfi",
   "title": "Glandyfi",
   "section": "sylfaen"
@@ -43,6 +53,21 @@
 {
   "id": "helar_sgwarnog",
   "title": "Hela'r Sgwarnog",
+  "section": "mynediad"
+},
+{
+  "id": "hobed_o_hilion",
+  "title": "Hobed o Hilion",
+  "section": "sylfaen"
+},
+{
+  "id": "merch_megan",
+  "title": "Merch Megan",
+  "section": "sylfaen"
+},
+{
+  "id": "migildi_magildi",
+  "title": "Migildi Magildi",
   "section": "mynediad"
 },
 {
@@ -89,6 +114,11 @@
   "id": "y_derwydd",
   "title": "Y Derwydd",
   "section": "sylfaen"
+},
+{
+  "id": "y_ferch_o_blwy_penderyn",
+  "title": "Y Ferch o Blwy Penderyn",
+  "section": "ehangiad"
 },
 {
   "id": "y_lily",
