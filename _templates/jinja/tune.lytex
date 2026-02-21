@@ -33,4 +33,9 @@
     {% block content %}
     {% endblock %}
   \end{lilypond}
+
+  {% if sources %}
+  \vspace*{\fill}
+  {\small\textit{See also: {{ sources|join(", ") }}}}
+  {% endif %}
 \end{document}

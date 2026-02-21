@@ -49,7 +49,11 @@
 {
   "id": "glanbargoed",
   "title": "Glanbargoed",
-  "section": "sylfaen"
+  "section": "sylfaen",
+  "sources": [
+    "Source 1",
+    "Source 2"
+  ]
 },
 {
   "id": "glandyfi",
