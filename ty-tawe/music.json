@@ -1,4 +1,10 @@
-[{
+[
+{
+  "id": "breuddwyd_y_frenhines",
+  "title": "Breuddwyd y Frenhines",
+  "section": "mynediad"
+},
+{
   "id": "cader_idris",
   "title": "Cader Idris",
   "section": "mynediad"
@@ -12,7 +18,7 @@
 {
   "id": "castell_caernarfon",
   "title": "Castell Caernarfon",
-  "section": "mynediad"
+  "section": "ehyngiad"
 },
 {
   "id": "chwi_fechgyn",
@@ -41,6 +47,11 @@
   "section": "sylfaen"
 },
 {
+  "id": "glanbargoed",
+  "title": "Glanbargoed",
+  "section": "sylfaen"
+},
+{
   "id": "glandyfi",
   "title": "Glandyfi",
   "section": "sylfaen"
@@ -58,6 +69,11 @@
 {
   "id": "hobed_o_hilion",
   "title": "Hobed o Hilion",
+  "section": "sylfaen"
+},
+{
+  "id": "malltraeth",
+  "title": "Malltraeth",
   "section": "sylfaen"
 },
 {
@@ -93,6 +109,11 @@
 {
   "id": "tom_jones",
   "title": "Tom Jones",
+  "section": "ehangiad"
+},
+{
+  "id": "walts_trefforest",
+  "title": "Walts Trefforest",
   "section": "ehangiad"
 },
 {
