@@ -149,5 +149,19 @@
   "id": "y_lily",
   "title": "Y Lily",
   "section": "sylfaen"
+},
+{
+  "id": "can_ddaear",
+  "title": "Can y Ddaear",
+  "section": "canu",
+  "words_welsh": "Helo, beth sydd ar y mynydd?\nCan y ddaear, can y ddaear.\nGwyla, gwyla, wyt ti'n wyla?\nNage, nage, dw i ddim yn wyla.",
+  "words_english": "Hello, what's on the mountain?\nSong of the earth, song of the earth.\nAre you crying, are you crying?\nNo, no, I'm not crying."
+},
+{
+  "id": "mi_welais_i",
+  "title": "Mi Welais i",
+  "section": "canu",
+  "words_welsh": "Mi welais i gorn yn y gwrych,\nClywais i lais yn y cwm.\nY gwynt yn chwythu'n dost,\nA'r haul yn machlud.",
+  "words_english": "I saw a horn in the hedge,\nI heard a voice in the valley.\nThe wind blowing strongly,\nAnd the sun setting."
 }
 ]

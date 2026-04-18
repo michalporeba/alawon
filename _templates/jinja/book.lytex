@@ -95,6 +95,60 @@
   {% if section.type == "page" %}
     {% include page_part_file ignore missing %}
 
+  {% elif section_id == "canu" %}
+    \newpage 
+    
+    \AddToShipoutPictureBG*{
+      \AtPageLowerLeft{
+          \color{gray!5!white}
+          \hspace*{-5mm}
+          \rule{0.29\paperwidth}{\paperheight}
+          \color{gray!20!white}
+          \hspace*{-5mm}
+          \rule{3mm}{\paperheight}
+      }
+    }
+
+    \setlength{\columnsep}{0.5cm}
+
+    \noindent
+    \begin{minipage}[b][\textheight]{0.28\textwidth}
+      {% for tune in section.tunes %}
+          \vspace*{5mm}
+          \noindent
+          \sffamily
+          \large
+            {{ tune.title }}
+      {% endfor %}
+      \vspace*{1mm}
+    \end{minipage}%
+    \hfill%
+    \begin{minipage}[t][\textheight]{0.7\textwidth}
+      \IfFileExists{ ../../parts/{{section_id}}.tex }{
+        \input{ ../../parts/{{section_id}}.tex }
+      }{ {% include page_part_file ignore missing %} }
+    \end{minipage}
+    
+    \newpage
+    
+    \setlength{\columnsep}{1cm}
+    
+    {% for tune in section.tunes %}
+      \newpage
+      \Huge{ {{ tune.title }} }\normalsize
+      
+      \vspace{0.5cm}
+      
+      \begin{multicols}{2}
+      \textbf{ {{ tune.words_welsh|newline }} }
+      \columnbreak
+      \textit{ {{ tune.words_english|newline }} }
+      \end{multicols}
+      
+      \vspace{1cm}
+      
+    {% endfor %}
+
   {% elif section.tunes|length > 0 %}
     \newpage 
     

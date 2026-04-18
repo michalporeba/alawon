@@ -30,6 +30,10 @@
     "sylfaen": {
       "type": "tunes"
     },
+    "canu": {
+      "type": "tunes",
+      "display": "canu'n sych"
+    },
     "ehangiad": {
       "type": "tunes"
     }
